@@ -63,7 +63,7 @@ local ESPConfig = getgenv().HybridESP
 local Character, Humanoid, Root
 local DrawCache = {}
 local ChamCache = {}
-local DiscordInvite = "https://discord.gg/dJJ3psbAxw"
+local DiscordInvite = ""
 
 Library.ForceCheckbox = false
 Library.ShowToggleFrameInKeybinds = true
