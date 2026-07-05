@@ -69,7 +69,7 @@ Library.ForceCheckbox = false
 Library.ShowToggleFrameInKeybinds = true
 
 local Window = Library:CreateWindow({
-    Title = "vodka hub",
+    Title = "手枪竞技场翻译😔😔😔",
     Footer = "version: example",
     Icon = 95816097006870,
     NotifySide = "Right",
@@ -83,10 +83,10 @@ local Tabs = {
     ["UI Settings"] = Window:AddTab("UI Settings", "settings"),
 }
 
-local MainGroup = Tabs.Main:AddLeftGroupbox("Hitbox Expander")
+local MainGroup = Tabs.Main:AddLeftGroupbox("范围")
 
 MainGroup:AddToggle("HitboxEnabled", {
-    Text = "Enable Hitbox Expander",
+    Text = "Enable 范围",
     Default = HitboxConfig.Enabled,
     Callback = function(Value)
         HitboxConfig.Enabled = Value
@@ -106,17 +106,17 @@ MainGroup:AddSlider("HitboxSize", {
 })
 
 MainGroup:AddToggle("HitboxTeamCheck", {
-    Text = "Team Check",
+    Text = "团队检查",
     Default = HitboxConfig.TeamCheck,
     Callback = function(Value)
         HitboxConfig.TeamCheck = Value
     end,
 })
 
-local VisualsGroup = Tabs.Visuals:AddLeftGroupbox("Movement")
+local VisualsGroup = Tabs.Visuals:AddLeftGroupbox("移动速度")
 
 VisualsGroup:AddToggle("GroundSpeedEnabled", {
-    Text = "Enable Ground Speed",
+    Text = "Enable 移动速度",
     Default = SpeedConfig.Enabled,
     Callback = function(Value)
         SpeedConfig.Enabled = Value
@@ -124,7 +124,7 @@ VisualsGroup:AddToggle("GroundSpeedEnabled", {
 })
 
 VisualsGroup:AddSlider("GroundSpeedValue", {
-    Text = "Ground Speed",
+    Text = "移动速度",
     Default = SpeedConfig.Speed,
     Min = 0,
     Max = 100,
@@ -136,7 +136,7 @@ VisualsGroup:AddSlider("GroundSpeedValue", {
 })
 
 VisualsGroup:AddToggle("InfiniteJumpEnabled", {
-    Text = "Enable Infinite Jump",
+    Text = "无限跳",
     Default = JumpConfig.Enabled,
     Callback = function(Value)
         JumpConfig.Enabled = Value
@@ -201,9 +201,9 @@ ESPGroup:AddToggle("ESPNPCs", {
     end,
 })
 
-local InfoGroup = Tabs.Info:AddLeftGroupbox("Discord")
+local InfoGroup = Tabs.Info:AddLeftGroupbox("")
 
-InfoGroup:AddLabel("vodka hub discord", true)
+InfoGroup:AddLabel("QQ群1040209982", true)
 InfoGroup:AddLabel(DiscordInvite, true)
 
 InfoGroup:AddButton({
@@ -216,7 +216,7 @@ InfoGroup:AddButton({
         end
 
         Library:Notify({
-            Title = "vodka hub",
+            Title = "1040209982",
             Description = "Discord copied to clipboard",
             Time = 3,
         })
