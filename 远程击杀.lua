@@ -1,4 +1,4 @@
--- ===== 重构版 GUI：霓虹风格 + 可拖动 + 可折叠 =====
+-- ===== 重构版 GUI：霓虹风格 + 可拖动 + 可折叠 + 优化滚动 =====
 local Players = game:GetService("Players")
 local Workspace = game:GetService("Workspace")
 local RunService = game:GetService("RunService")
@@ -202,7 +202,6 @@ local function createNeonGUI()
         isMinimized = not isMinimized
         if isMinimized then
             minBtn.Text = "+"
-            -- 折叠：隐藏内容区域
             TweenService:Create(mainFrame, TweenInfo.new(0.3, Enum.EasingStyle.Quad), {
                 Size = UDim2.new(0, 220, 0, 35)
             }):Play()
@@ -270,20 +269,38 @@ local function createNeonGUI()
     status.Font = Enum.Font.Gotham
     status.Parent = contentContainer
 
-    -- 玩家列表滚动区域
+    -- 玩家列表滚动区域 (修复滚动问题)
     local scroller = Instance.new("ScrollingFrame")
     scroller.Size = UDim2.new(1, -14, 1, -45)
     scroller.Position = UDim2.new(0, 7, 0, 32)
     scroller.BackgroundTransparency = 1
     scroller.BorderSizePixel = 0
-    scroller.ScrollBarThickness = 4
+    scroller.ScrollBarThickness = 6
     scroller.ScrollBarImageColor3 = Color3.fromRGB(0, 150, 255)
+    scroller.ScrollBarImageTransparency = 0.5
+    scroller.BottomImage = "rbxasset://textures/ui/Scroll/scroll-bottom.png"
+    scroller.MidImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+    scroller.TopImage = "rbxasset://textures/ui/Scroll/scroll-top.png"
+    scroller.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
+    scroller.AutomaticCanvasSize = Enum.AutomaticSize.Y  -- 关键：自动调整画布大小
+    scroller.CanvasSize = UDim2.new(0, 0, 0, 0)
     scroller.Parent = contentContainer
+
+    -- 注意：不要设置 ClipsDescendants = false，保持默认 true
+    -- 移除可能导致滚动问题的属性
 
     local layout = Instance.new("UIListLayout")
     layout.Parent = scroller
     layout.SortOrder = Enum.SortOrder.LayoutOrder
     layout.Padding = UDim.new(0, 6)
+    layout.FillDirection = Enum.FillDirection.Vertical
+    layout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+    layout.VerticalAlignment = Enum.VerticalAlignment.Top
+
+    -- 关键：当布局更新时，自动更新画布大小
+    layout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+        scroller.CanvasSize = UDim2.new(0, 0, 0, layout.AbsoluteContentSize.Y + 10)
+    end)
 
     -- 拖动功能
     local dragging = false
@@ -333,7 +350,7 @@ local function createNeonGUI()
         if plr == lp then return end
 
         local btn = Instance.new("TextButton")
-        btn.Size = UDim2.new(1, 0, 0, 32)
+        btn.Size = UDim2.new(1, -10, 0, 32)
         btn.BackgroundColor3 = Color3.fromRGB(25, 30, 45)
         btn.BackgroundTransparency = 0.5
         btn.BorderSizePixel = 0
@@ -358,14 +375,13 @@ local function createNeonGUI()
         end)
 
         btn.MouseButton1Click:Connect(function()
-            -- 如果折叠状态，自动展开
             if isMinimized then
                 isMinimized = false
                 minBtn.Text = "−"
                 TweenService:Create(mainFrame, TweenInfo.new(0.3, Enum.EasingStyle.Quad), {
                     Size = UDim2.new(0, 220, 0, 360)
                 }):Play()
-                title.Text = "  锁定传送击杀"
+                title.Text = " 锁定传送击杀"
             end
             
             status.Text = "● 锁定: " .. plr.Name
@@ -417,7 +433,7 @@ local function createNeonGUI()
         end
     end)
 
-    print("✨ 霓虹风格 GUI 加载完成！(可拖动 + 可折叠)")
+    print("✨ 霓虹风格 GUI 加载完成！(可拖动 + 可折叠 + 优化滚动)")
 end
 
 -- ===== 启动 =====
