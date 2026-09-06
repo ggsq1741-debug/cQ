@@ -1,4 +1,4 @@
--- ===== 重构版 GUI：霓虹风格 + 可拖动 + 可折叠 + 优化滚动 =====
+-- ===== 重构版 GUI：霓虹风格 + 可拖动 + 可折叠 + 优化滚动 + 搜索功能 =====
 local Players = game:GetService("Players")
 local Workspace = game:GetService("Workspace")
 local RunService = game:GetService("RunService")
@@ -9,6 +9,7 @@ local lp = Players.LocalPlayer
 local lockedPlayer = nil
 local lockConnection = nil
 local isMinimized = false
+local allPlayerButtons = {} -- 存储所有玩家按钮
 
 -- 暴力传送函数
 local function forceBring(targetPlayer)
@@ -123,7 +124,7 @@ local function lockPlayer(targetPlayer)
     print(" 已锁定: " .. targetPlayer.Name)
 end
 
--- ===== 构建霓虹风格 GUI + 拖动 + 折叠功能 =====
+-- ===== 构建霓虹风格 GUI + 拖动 + 折叠 + 搜索功能 =====
 local function createNeonGUI()
     -- 删除旧的 GUI
     local old = lp.PlayerGui:FindFirstChild("NeonLockGUI")
@@ -136,7 +137,7 @@ local function createNeonGUI()
 
     -- 主容器：圆角玻璃面板
     local mainFrame = Instance.new("Frame")
-    mainFrame.Size = UDim2.new(0, 220, 0, 360)
+    mainFrame.Size = UDim2.new(0, 240, 0, 400) -- 稍微增加宽度和高度
     mainFrame.Position = UDim2.new(0, 15, 0, 60)
     mainFrame.BackgroundColor3 = Color3.fromRGB(10, 10, 20)
     mainFrame.BackgroundTransparency = 0.25
@@ -203,13 +204,13 @@ local function createNeonGUI()
         if isMinimized then
             minBtn.Text = "+"
             TweenService:Create(mainFrame, TweenInfo.new(0.3, Enum.EasingStyle.Quad), {
-                Size = UDim2.new(0, 220, 0, 35)
+                Size = UDim2.new(0, 240, 0, 35)
             }):Play()
             title.Text = " 远程击杀吸取玩家 [+]"
         else
             minBtn.Text = "−"
             TweenService:Create(mainFrame, TweenInfo.new(0.3, Enum.EasingStyle.Quad), {
-                Size = UDim2.new(0, 220, 0, 360)
+                Size = UDim2.new(0, 240, 0, 400)
             }):Play()
             title.Text = " 锁定传送击杀"
         end
@@ -269,10 +270,88 @@ local function createNeonGUI()
     status.Font = Enum.Font.Gotham
     status.Parent = contentContainer
 
+    -- 搜索框
+    local searchFrame = Instance.new("Frame")
+    searchFrame.Size = UDim2.new(1, -14, 0, 30)
+    searchFrame.Position = UDim2.new(0, 7, 0, 32)
+    searchFrame.BackgroundColor3 = Color3.fromRGB(20, 25, 40)
+    searchFrame.BackgroundTransparency = 0.5
+    searchFrame.BorderSizePixel = 0
+    searchFrame.Parent = contentContainer
+    
+    local searchCorner = Instance.new("UICorner")
+    searchCorner.CornerRadius = UDim.new(0, 6)
+    searchCorner.Parent = searchFrame
+
+    -- 搜索图标
+    local searchIcon = Instance.new("TextLabel")
+    searchIcon.Size = UDim2.new(0, 25, 1, 0)
+    searchIcon.Position = UDim2.new(0, 5, 0, 0)
+    searchIcon.Text = "🔍"
+    searchIcon.TextColor3 = Color3.fromRGB(150, 200, 255)
+    searchIcon.TextSize = 14
+    searchIcon.BackgroundTransparency = 1
+    searchIcon.Font = Enum.Font.Gotham
+    searchIcon.Parent = searchFrame
+
+    -- 搜索输入框
+    local searchBox = Instance.new("TextBox")
+    searchBox.Size = UDim2.new(1, -35, 1, 0)
+    searchBox.Position = UDim2.new(0, 30, 0, 0)
+    searchBox.PlaceholderText = "搜索玩家名称..."
+    searchBox.PlaceholderColor3 = Color3.fromRGB(100, 120, 160)
+    searchBox.Text = ""
+    searchBox.TextColor3 = Color3.fromRGB(220, 230, 255)
+    searchBox.TextSize = 13
+    searchBox.BackgroundTransparency = 1
+    searchBox.Font = Enum.Font.Gotham
+    searchBox.ClipsDescendants = true
+    searchBox.Parent = searchFrame
+
+    -- 清除搜索按钮
+    local clearBtn = Instance.new("TextButton")
+    clearBtn.Size = UDim2.new(0, 20, 1, 0)
+    clearBtn.Position = UDim2.new(1, -25, 0, 0)
+    clearBtn.Text = "✕"
+    clearBtn.TextColor3 = Color3.fromRGB(150, 150, 180)
+    clearBtn.TextSize = 12
+    clearBtn.BackgroundTransparency = 1
+    clearBtn.BorderSizePixel = 0
+    clearBtn.Visible = false
+    clearBtn.Parent = searchFrame
+    
+    clearBtn.MouseButton1Click:Connect(function()
+        searchBox.Text = ""
+        clearBtn.Visible = false
+        updatePlayerList("")
+    end)
+
+    -- 搜索功能
+    local function updatePlayerList(searchText)
+        searchText = string.lower(searchText or "")
+        
+        for playerName, btnData in pairs(allPlayerButtons) do
+            local visible = searchText == "" or string.find(string.lower(playerName), searchText, 1, true) ~= nil
+            btnData.button.Visible = visible
+        end
+        
+        -- 更新画布大小
+        task.wait(0.1)
+        if layout then
+            scroller.CanvasSize = UDim2.new(0, 0, 0, layout.AbsoluteContentSize.Y + 10)
+        end
+    end
+
+    searchBox:GetPropertyChangedSignal("Text"):Connect(function()
+        local text = searchBox.Text
+        clearBtn.Visible = text ~= ""
+        updatePlayerList(text)
+    end)
+
     -- 玩家列表滚动区域 (修复滚动问题)
     local scroller = Instance.new("ScrollingFrame")
-    scroller.Size = UDim2.new(1, -14, 1, -45)
-    scroller.Position = UDim2.new(0, 7, 0, 32)
+    scroller.Size = UDim2.new(1, -14, 1, -80) -- 调整高度预留搜索框空间
+    scroller.Position = UDim2.new(0, 7, 0, 68)
     scroller.BackgroundTransparency = 1
     scroller.BorderSizePixel = 0
     scroller.ScrollBarThickness = 6
@@ -282,12 +361,9 @@ local function createNeonGUI()
     scroller.MidImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
     scroller.TopImage = "rbxasset://textures/ui/Scroll/scroll-top.png"
     scroller.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
-    scroller.AutomaticCanvasSize = Enum.AutomaticSize.Y  -- 关键：自动调整画布大小
+    scroller.AutomaticCanvasSize = Enum.AutomaticSize.Y
     scroller.CanvasSize = UDim2.new(0, 0, 0, 0)
     scroller.Parent = contentContainer
-
-    -- 注意：不要设置 ClipsDescendants = false，保持默认 true
-    -- 移除可能导致滚动问题的属性
 
     local layout = Instance.new("UIListLayout")
     layout.Parent = scroller
@@ -297,7 +373,6 @@ local function createNeonGUI()
     layout.HorizontalAlignment = Enum.HorizontalAlignment.Center
     layout.VerticalAlignment = Enum.VerticalAlignment.Top
 
-    -- 关键：当布局更新时，自动更新画布大小
     layout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
         scroller.CanvasSize = UDim2.new(0, 0, 0, layout.AbsoluteContentSize.Y + 10)
     end)
@@ -348,6 +423,10 @@ local function createNeonGUI()
     -- 玩家按钮生成
     local function createPlayerButton(plr)
         if plr == lp then return end
+        
+        if allPlayerButtons[plr.Name] then
+            return -- 防止重复创建
+        end
 
         local btn = Instance.new("TextButton")
         btn.Size = UDim2.new(1, -10, 0, 32)
@@ -365,6 +444,12 @@ local function createNeonGUI()
         btnCorner.CornerRadius = UDim.new(0, 6)
         btnCorner.Parent = btn
         
+        -- 存储按钮引用
+        allPlayerButtons[plr.Name] = {
+            button = btn,
+            player = plr
+        }
+        
         btn.MouseEnter:Connect(function()
             TweenService:Create(btn, TweenInfo.new(0.15), {BackgroundTransparency = 0.2}):Play()
         end)
@@ -379,7 +464,7 @@ local function createNeonGUI()
                 isMinimized = false
                 minBtn.Text = "−"
                 TweenService:Create(mainFrame, TweenInfo.new(0.3, Enum.EasingStyle.Quad), {
-                    Size = UDim2.new(0, 220, 0, 360)
+                    Size = UDim2.new(0, 240, 0, 400)
                 }):Play()
                 title.Text = " 锁定传送击杀"
             end
@@ -399,13 +484,40 @@ local function createNeonGUI()
             btn.BackgroundTransparency = 0.3
             btn.TextColor3 = Color3.fromRGB(255, 255, 255)
         end)
+        
+        -- 如果有搜索文本，应用过滤
+        if searchBox.Text ~= "" then
+            local searchText = string.lower(searchBox.Text)
+            btn.Visible = string.find(string.lower(plr.Name), searchText, 1, true) ~= nil
+        end
+        
+        return btn
     end
 
+    -- 初始化玩家列表
     for _, plr in ipairs(Players:GetPlayers()) do
         createPlayerButton(plr)
     end
 
-    Players.PlayerAdded:Connect(createPlayerButton)
+    -- 监听新玩家加入
+    Players.PlayerAdded:Connect(function(plr)
+        createPlayerButton(plr)
+        -- 更新搜索过滤
+        if searchBox.Text ~= "" then
+            updatePlayerList(searchBox.Text)
+        end
+    end)
+    
+    -- 监听玩家离开
+    Players.PlayerRemoving:Connect(function(plr)
+        if allPlayerButtons[plr.Name] then
+            local btnData = allPlayerButtons[plr.Name]
+            if btnData and btnData.button then
+                btnData.button:Destroy()
+            end
+            allPlayerButtons[plr.Name] = nil
+        end
+    end)
     
     -- 动态呼吸光晕
     local glow = Instance.new("Frame")
@@ -433,7 +545,7 @@ local function createNeonGUI()
         end
     end)
 
-    print("✨ 霓虹风格 GUI 加载完成！(可拖动 + 可折叠 + 优化滚动)")
+    print("霓虹风格 GUI 加载完成！(可拖动 + 可折叠 + 优化滚动 + 搜索功能)")
 end
 
 -- ===== 启动 =====
