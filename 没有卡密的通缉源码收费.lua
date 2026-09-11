@@ -1,6 +1,10 @@
+print = function() end
+warn = function() end
+printidentity = function() end
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-print("[🔧] 开始安全删除反作弊文件...")
+print("[] 开始安全删除反作弊文件...")
 
 local deletedCount = 0
 
@@ -21,14 +25,14 @@ local function deleteIfExists(parent, ...)
         pcall(function()
             obj:Destroy()
             deletedCount = deletedCount + 1
-            print("[🔥] 删除: " .. obj:GetFullName())
+            print("[] 删除: " .. obj:GetFullName())
         end)
         return true
     end
     return false
 end
 
-print("📌 删除反作弊核心文件...")
+print(" 删除反作弊核心文件...")
 
 -- 1. RateLimiter（限速器 - 反作弊核心）
 deleteIfExists(ReplicatedStorage, "Shared", "Core", "RateLimiter")
@@ -46,7 +50,7 @@ deleteIfExists(ReplicatedStorage, "Client", "Wanted", "Modules", "ClientPlayerFl
 -- 5. Telemetry（遥测 - 监控玩家行为）
 deleteIfExists(ReplicatedStorage, "Client", "Wanted", "Objects", "DevvChassis", "Components", "Telemetry")
 
-print("📌 删除Cmdr管理命令（可能用于反作弊）...")
+print(" 删除Cmdr管理命令（可能用于反作弊）...")
 
 -- 6. CmdrClient（管理命令 - 可能用于检查）
 deleteIfExists(ReplicatedStorage, "CmdrClient")
@@ -54,7 +58,7 @@ deleteIfExists(ReplicatedStorage, "CmdrClient")
 -- 7. Vendor.Cmdr（管理命令）
 deleteIfExists(ReplicatedStorage, "Vendor", "Cmdr")
 
-print("📌 删除Report/Flag相关（举报/标记系统）...")
+print(" 删除Report/Flag相关（举报/标记系统）...")
 
 -- 8. ReportApp（举报应用）
 deleteIfExists(ReplicatedStorage, "Client", "Wanted", "UI", "Screens", "PhoneScreen", "Apps", "ReportApp")
@@ -68,7 +72,7 @@ deleteIfExists(ReplicatedStorage, "Client", "Wanted", "Modules", "ClientPlayerFl
 -- 11. GameShopFlags（商店标记）
 deleteIfExists(ReplicatedStorage, "Shared", "Wanted", "Indicies", "GameShopFlags")
 
-print("📌 删除安全相关UI...")
+print(" 删除安全相关UI...")
 
 -- 12. SecurityCameraScreen（监控摄像头）
 deleteIfExists(ReplicatedStorage, "Client", "Wanted", "UI", "Screens", "SecurityCameraScreen")
@@ -87,7 +91,7 @@ deleteIfExists(ReplicatedStorage, "Shared", "Wanted", "Indicies", "Objects", "Pr
 -- ============================================
 -- 删除反作弊Remote事件
 -- ============================================
-print("📌 删除反作弊Remote...")
+print(" 删除反作弊Remote...")
 
 local function deleteRemote(parent, name)
     if parent then
@@ -96,7 +100,7 @@ local function deleteRemote(parent, name)
             pcall(function()
                 obj:Destroy()
                 deletedCount = deletedCount + 1
-                print("[🔥] 删除Remote: " .. obj:GetFullName())
+                print("[] 删除Remote: " .. obj:GetFullName())
             end)
         end
     end
@@ -113,7 +117,7 @@ local function scanAndDeleteRemotes()
                     pcall(function()
                         obj:Destroy()
                         deletedCount = deletedCount + 1
-                        print("[🔥] 删除Remote: " .. obj:GetFullName())
+                        print("[] 删除Remote: " .. obj:GetFullName())
                     end)
                     break
                 end
@@ -228,7 +232,7 @@ local Window = WindUI:CreateWindow({
     SideBarWidth = 130,
     HideSearchBar = false,
     ScrollBarEnabled = true,
-    Background = "https://raw.githubusercontent.com/ggsq1741-debug/cQ/refs/heads/main/image_download_1789060091738.jpg",
+    Background = "https://raw.githubusercontent.com/ggsq1741-debug/cQ/refs/heads/main/image_download_1789118092608.jpg",
     BackgroundImageTransparency = 0.4,
     User = { Enabled = true },
     ToggleKey = Enum.KeyCode.F,
