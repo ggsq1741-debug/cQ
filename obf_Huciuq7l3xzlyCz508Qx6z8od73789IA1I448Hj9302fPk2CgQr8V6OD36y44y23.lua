@@ -1,0 +1,12 @@
+local v0=(39684 -(5888 + 17632)) + (((3864 + 57263 + 306838) -(200192 + 1614 + (73467 -(282 + 595)))) -(69237 -(1523 + 114))) + ((758936 -567984) -((100282 + 11308) -((2520 -1718) + (168 -(10 + 8))))) ;v0=v0 + ((434 -321) -(((511 -(416 + 26)) -(60 -17)) + (1132 -(68 + 997)))) + (((3910 -1700) -(2261 -(226 + 1044))) -((378 -291) + (149 -(32 + 85)) + (1435 -(145 + 293)))) ;local v1=(1204883 -(44 + 386)) -(897 + 18 + 19 + 63) ;local v2=1007536 + 222935 ;local v3=8024438 -(892 + 65) ;if (v2>v1) then print("true");end if (((2 -1) + v3)>v2) then print("obfuscate the conditions!");end print("Clicking [Strings] will completely hide this string!");do function sieve_of_eratosthenes(v5) local v6=1138 -(116 + 1022) ;local v7;local v8;while true do if (v6==(4 -3)) then while true do local v11=0 + 0 ;local v12;while true do if (v11==(0 -0)) then v12=0 -(0 -0) ;while true do if (v12==((0 -0) + 0)) then if (((350 -(87 + 263)) -(180 -(67 + 113)))==v7) then local v13=0 + 0 ;while true do if (v13==(0 + 0)) then v8={};for v15=1,v5 do v8[v15]=((420 + 768) -((1954 -(261 + 624)) + (289 -171)))~=v15 ;end v13=1 + 0 ;end if (v13==(1081 -(1020 + 60))) then v7=(7 -5) -(953 -(802 + 150)) ;break;end end end if (v7==((2 -1) -(0 -0))) then local v14=0 + 0 ;while true do if (v14==(997 -(915 + 82))) then for v17=(2 -1) + 1 + 0 ,math.floor(math.sqrt(v5)) do if v8[v17] then for v18=v17 * v17 ,v5,v17 do v8[v18]=false;end end end return v8;end end end break;end end break;end end end break;end if (v6==(0 -0)) then v7=0 -0 ;v8=nil;v6=1188 -(1069 + 118) ;end end end local v4=sieve_of_eratosthenes((1691 -945) -(712 -386) );for v9,v10 in pairs(v4) do if v10 then print("Prime found: "   .. v9 );end end end print("How to obfuscate best?");
+-- ⚠️ WARNING: integrity protected!
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
+
+]]--
