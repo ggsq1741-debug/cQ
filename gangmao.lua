@@ -1,1 +1,915 @@
---[[ v1.0.0 https://wearedevs.net/obfuscator ]] return(function(...)local E={"4NapJU\'I\",","4ArcL9";"4hdd";"4Qe+U`[bZ@FrY","40hpmFp\"","4N2L!$\"64%%\"O-P>K@h","4he[qU0*9:PR(M";"40R1KAbdEbZ","4NF-%ahdGipTXk8Maq";"40q9c>XI?";"4";"4XIgP2","4R==<6","4k`;:&";"4b$tJUAc4","40*9:PR(M","4k`;.nRk";"4p49hZbm";"4#=fkQb9o;8X.C_8","4AK+Z/XIS","4Qe#Is#dHUI#:IT9bJ";"4XJ\"rFX[#";"4R0imkb%%_U:M97(#s";"4hdS","4rOXtO#;YDZrFS\"i0N";"4A)/","4X`Lt>";"4h=hmfbMQUHpKkM^Rk";"4j:%8#\"P+^\"Q3lBjRk";"4RR]%TP>u>![;M`.";"4hf5&bP=(1c[Hg]=plo","4R(^S<","40R1M7R=\'t^";"4bdQ*-:5h","4r.R>,XE:b0oomHhh,9","4AVepMT6Ua]#RYYk","4V,Y?nVR$o?H\'^B([XQCb.^mbTa3bs&\'7o]a[RMW\\Wj(h512GC0uDI]NV>7]&l@gB<:)\"4&h`7D$6aDp\\l]%I$$^lF4^\']","4[-Qm8pEplgpE.Bl0hV?-","4k`;+dp\'g?";"4A_K`3";"40ZB\"opE.XMXP05W";"4Li,Pd=<$h","4pER3Qbm","4\'.7pk:n#-Cp2>?W";"4Lm","4k`;Sg0hAa6X.CE","4b-[[Uhg";"4bWqeJRCs"}local function I(I)return E[I+(-826830+883346)]end for I,T in ipairs({{1991581761%10593520,-300525+300573};{915042229%5613756;-489444-(-489476)};{453278-453245;2675541954%11838681}})do while T[-584837+584838]<T[75797732%5053182]do E[T[-38559-(-38560)]],E[T[3206577923%13762137]],T[187504-187503],T[1020185-1020183]=E[T[1771871080%8771639]],E[T[208265773%5340148]],T[-308026+308027]+(78945-78944),T[-126982-(-126984)]-(-420728-(-420729))end end do local I={["3"]=744643-744617;J=1021674+-1021658,q=-217671-(-217723);["/"]=-716160+716196;K=-197681+197681;C=418954+-418903;W=-363071+363116,["4"]=-195346+195377;t=914097883%3856953,M=-334980+335015;b=270858141%14255691,N=77612351%5970180,B=46641717%613706,U=26975-26943;Y=88504345%355439,j=881610557%9688028,c=66386350%1475252;m=2913233981%11988617,z=-712152-(-712200);s=-500882+500888,h=290197070%1511443,i=80215814%1485477,A=130715-130711,["1"]=2453951478%13709226,I=-242482+242520,D=470445-470383,e=1316891689%11160099;O=617597989%4901571,g=323175785%6595423,y=398101-398100;o=956784-956781,x=389429-389383,r=685646+-685627;v=-303084-(-303123);d=484454+-484394;["0"]=66594-66552;T=2867463067%12150267;H=2009474268%12032780,["2"]=1023818+-1023793,L=393056-393003;p=901782930%14090358;E=953762-953734;k=-34583+34640,Q=-988631+988680;V=223501+-223464,["6"]=2816693019%13673267,X=375691169%1869110,P=883668+-883653,R=-688922-(-688952),F=-907822-(-907845);["9"]=1615912753%10845052;w=906428+-906388,G=218571-218527,["7"]=640395-640374;["5"]=-157445-(-157478),Z=-534821-(-534823);n=-47533-(-47580),S=-659367+659430,f=-866174-(-866215);l=520168585%14861959,["8"]=393380231%1812812;["+"]=2794909251%15614018,a=146858242%825046;u=1056176617%5588236}local T=string.sub local V=table.concat local U=string.char local M=string.len local L=math.floor local b=table.insert local s={[")"]=905955+-905907;T=-619244+619272,["."]=61197695%2781711,F=-241603+241682,["<"]=1454422070%5960746,["$"]=585762+-585695;["0"]=325617+-325580,g=174097858%9163042;["("]=187227689%5200768,A=-335016+335049,R=736539945%4661645;X=-141838-(-141869);S=-216156-(-216212),["#"]=-588899-(-588925);m=1574063047%13929761,C=990376-990307;I=-260845+260925;P=2091342817%11815496;["&"]=248719592%12435977;["7"]=1120436036%16238203,K=-765812-(-765832);D=440713+-440670,n=-342679+342738;Q=221465-221450;a=-942756-(-942780);h=42367-42333;s=-401802-(-401804),i=636442018%3857224,["8"]=2116738494%16537019;[":"]=887524-887486;["="]=240768-240755,o=-531000+531016;N=10442-10419;["!"]=773921351%14883102;["9"]=670176833%8935691,p=688736964%7486271,["@"]=171270+-171187,["\\"]=1570662281%14150110,G=1203445356%5928302,["4"]=895158+-895080;["/"]=-686534-(-686534),l=-174249-(-174326);M=-522843-(-522848);["5"]=110857504%1421250;["]"]=369987225%1728912,["?"]=300231-300147;["2"]=1217626206%10496777,[">"]=63483530%1923743,["\'"]=-948964+948986,j=897762+-897745,["*"]=-409501+409510,_=249166+-249147;["-"]=3249633025%13050735,q=1969475928%13397795,k=-1016659+1016689;f=835844176%10319063;e=-684555+684627;Y=533998+-533953;W=234729814%998850,H=105030+-104969,["3"]=1046192-1046122,t=880670-880664,["1"]=302786+-302711,E=182952+-182901,["\""]=-981543-(-981582),[","]=171205-171139,["+"]=-586598+586642,B=2010571624%12111877;b=-155866-(-155902),c=1026532-1026518,["^"]=-558983+559065,d=1728573265%8642866;[";"]=716813-716773,u=660995913%4348657,["`"]=30290095%6058008,J=-773872-(-773953);U=1043517633%10331857;["6"]=227177-227176;O=-1048105-(-1048108);Z=304417+-304410,["%"]=-992909-(-992921);L=-456286-(-456304);V=937376+-937308,["["]=-324293-(-324320),r=-194759-(-194780)}local g=E local y=type for E=80051765%3078914,#g,46889-46888 do local u=g[E]if y(u)=="string"then local y=T(u,836422+-836421,599889567%5503574)if y=="B"then u=T(u,817260-817258)local s=M(u)local y={}local K=-238813-(-238814)local C=171014-171014 local k=3269731530%16767854 while K<=s do local E=T(u,K,K)local V=I[E]if V then C=C+V*((387718476%5239438)^(((-51259-(-51262))-k)))k=k+(-1004797+1004798)if k==-635232-(-635236)then k=1334362332%10185972 local E=L(C/(904923+-839387))local I=L((C%(144840361%1744275))/(977562-977306))local T=C%(1674355434%7376014)b(y,U(E,I,T))C=875827712%13684808 end elseif E=="="then b(y,U(L(C/(1091904340%9175116))))if K>=s or T(u,K+(725634-725633),K+941109857%8113016)~="="then b(y,U(L((C%(393499-327963))/(204664239%5531459))))end break end K=K+296356105%12348171 end g[E]=V(y)elseif y=="4"then u=T(u,582493-582491)local I=M(u)local y={}local K=651526-651525 while K<=I do local E=(I-K)+3407163255%14079187 local V=E>=380903-380898 and-714906+714911 or E local M=236484-236484 local g=V>478476751%1913907 for E=734132-734132,1307074360%5186803,-47949+47950 do local I if E<V then local V=T(u,K+E,K+E)I=s[V]if not I then g=false break end else I=557495882%15067454 end M=M*(470934+-470849)+I end if g then local E=L(M/(-916854+17694070))%(369128+-368872)local I=L(M/(-152395+217931))%(438310+-438054)local T=L(M/(-864170-(-864426)))%(556372+-556116)local s=M%(26113996%2176145)if V==-826194-(-826199)then b(y,U(E,I,T,s))elseif V==282114+-282110 then b(y,U(E,I,T))elseif V==-274973+274976 then b(y,U(E,I))elseif V==245957-245955 then b(y,U(E))end end K=K+V end g[E]=V(y)end end end end return(function(V,E,b,L,U,s,M,P,G,H,k,g,C,f,S,u,w,y,K,T)K,u,G,C,S,T,y,f,H,w,P,g,k=502393+-502393,function()K=K+(123989+-123988)y[K]=-459653+459654 return K end,function(E,I)local V=C(I)local U=function(U,M,L,b,s)return T(E,{U;M,L;b;s},I,V)end return U end,function(E)for I=1945966065%8176328,#E,3697433432%16288253 do y[E[I]]=y[E[I]]+(-105722+105723)end if U then local T=U(true)local V=L(T)V[I(-464781-(-408288))],V[I(-347270+290800)],V[I(459039+-515554)]=E,k,function()return 2694856-(-679110)end return T else return M({},{[I(-505680-(-449210))]=k,[I(352236-408729)]=E,[I(869708-926223)]=function()return 1702444174%19307616 end})end end,function(E)y[E]=y[E]-1275584279%5619314 if y[E]==684637-684637 then y[E],g[E]=nil,nil end end,function(T,U,M,L)local Z,x,K,e,B,l,Y,C,h,H,O,X,W,r,q,N,t,k,D,Ef,J,A,m,Q,c,j,s,n,o,z,R,a,v,F,y,i,p,d while T do if T<7568018-(-792651)then if T>-1032554+5734604 then if T>-915753+7600464 then if T>7946793-324626 then if T<719681093%13952796 then if T<-57958+7852644 then i,e=-814315-(-814316),-279500+279501 p=#l j=v(e,p)e=J(l,j)p=g[Q]o=e-i O=k(o)p[e]=O e,o=nil,504877+-504877 O=#l j=nil p=O==o T=p and 13346209-245412 or-976973+8656167 elseif T<948448+7047714 then J,T=l,j T=l and 16491323-648294 or 10855388-914218 else H,T,A=35184372273685-184853,{},-179335+179336 g[M[-528511+528513]]=T s=g[M[-198098-(-198101)]]k=s s=K%H Z=72153-71898 g[M[2247980388%10807598]]=s N=K%Z Z=1605740104%6662822 H=N+Z J=1095234253%4803659 g[M[365948993%1710042]]=H v=J J,Z=1565186961%8109777,I(-38761+-17712)N=#y C[K]=Z c,Q,l,T=I(-2261+-54212),N,v<J,2930161412%20856331 J,Z=A-v,-583922-(-584126)end else if T<-753775+8931933 then T=15171603-(-111972)elseif T<2523066877%14536170 then B=765580+-765579 t=m[B]z,T=t,14019534-(-42015)else Ef=T t=g[K]z,T=t,t and 9279698-1018232 or 3867569781%17595928 end end else if T<1438681154%9058743 then if 409380958%13871887>T then a=u()F=391034644%9093823 g[a]=W r=I(169314+-225785)x=E[r]r=I(573789-630273)i=x[r]X,m,n,r=802182+-802181,616325+-616225,1340064588%10984054,144343-144342 x=i(r,m)z=889278628%8389421 i=u()m=76529820%7652982 g[i]=x x=g[Q]r=x(m,F)x=u()g[x]=r r=g[Q]d=g[i]B,D,F=I(-414911-(-358435)),820272+-820272,120982-120981 m=r(F,d)r=u()g[r]=m F=g[Q]d=F(X,z)F=33794-33793 m=d==F d,z=I(445227+-501717),I(10944-67431)F=u()g[F]=m t=E[B]R=g[Q]h={R(D,n)}m=I(255737+-312219)B=t(V(h))m,t=p[m],I(248489+-304976)Ef=B..t X=z..Ef m=m(p,d,X)d=u()g[d]=m Ef=G(9302253-(-916848),{Q,a,J,k;K;O;F,d;i,r,x;v})z=I(-983717-(-927232))X=E[z]z={X(Ef)}X=g[F]T,m=X and 2806183744%15536204 or 7598033-(-759435),{V(z)}elseif T<800281+6494377 then A=1967119760%9065068 c=Z==A T=c and 6879927-694779 or 4329168-(-606024)elseif 1164268486%8263643>T then c=-426022+426023 s=Z==c T=s and 1693008703%10736523 or-177857+15679498 else A=641232+13028289<11633018-153736 c=g[K]s=c==A T=s and-1039181+9134031 or 14894038-(-389537)end else if 1123903181%18302307>T then K=g[M[913719192%11866483]]k=nil y=#K T=E[I(829306-885813)]C=g[M[987324-987323]]K=C[y]s={K}C=g[M[-418434-(-418435)]]C[y]=k elseif T<2235575350%23453082 then T=3995091096%20651583 else s,C,K=13274117-(-217731),3970494-308750,I(-1042692-(-986192))y=K^C T=s-y s,y=I(615719-672199),T T=s/y s={T}T=E[I(-238498-(-181987))]end end end else if 506852+5012990>T then if T>-249170+5359686 then if 1634263160%14289117>T then T=1588677-929663 elseif 2709463493%22163805>T then T=9766381-(-670649)else T=g[M[-740917+740924]]T=T and 413816+2769677 or-811729+6342205 end else if T<2935627863%15264708 then T=1458737463%12928575 elseif 515734+4370963>T then y=nil g[M[20116554%300247]]=s T=613032+4896177 elseif T<-836330+5835298 then Q=279394-279389 A=Z==Q T=A and 734848+1821828 or 12294420-11006 else j=e i,T=j,2302258014%12614473 l[j]=i j=nil end end else if T>195429+5920756 then if T<1245694497%6291647 then T,c=546192739%16531325,590635+9215455<3162919-(-937647)g[K]=c elseif T<6712590-353162 then H=I(-660226-(-603758))N=u()v=w(1450551584%17102694,{N})T=6668902-644281~=1586649943%19236351 g[K]=T Z=T k=E[H]H=I(151932-208444)C=k[H]H=u()J=I(266303+-322788)k=u()g[k]=C C=G(284499754%19627038,{})g[H]=C C=3516440414%14377450<=456957+2293970 g[N]=C Q=E[J]J=Q(v)T,C=J and 9105645-(-56508)or 1756433612%22952188,J else i,e=not o,O+e j=p>=e j=i and j i=p<=e i=o and i j=i or j i=5985507-922762 T=j and i j=10069811-(-954832)T=T or j end else if T<1079329055%15338949 then T={}C=g[M[249255204%2026465]]y,K,k=T,84306+-84305,C C=1996348057%8115236 H=C C=854041162%5849597 N,T=C>H,492750+16022125 C=K-H elseif-796138+6657136>T then W=363677+1919277~=6765545-(-126333)T=W and 10502208-(-212631)or 15708540-(-814412)else T=4919390-(-755384)end end end end else if T<179944617%3690754 then if T<-53613+2003056 then if T<824428893%5965956 then if T<-688839+764228 then A,c,K=36955+-36700,-535108-(-535108),C T=g[M[1010767927%8284983]]Z=T(c,A)T=16097249-(-417626)y[K]=Z K=nil elseif 737178+-362301>T then T=-960765+6635539 elseif 2963689001%14453740>T then T,Z=1344632505%6908034,nil else i,W=not o,W+q a=Y>=W a=i and a i=Y<=W i=o and i a=i or a i=-204914+7150409 T=a and i a=811398+10865273 T=T or a end else if T<1179570-(-525105)then T=2761617058%18839738 elseif 1028849+841921>T then A,W=J,I(-50181+-6287)a=E[W]W=I(781773-838278)O=a[W]a=O(y,A)A=nil O=g[M[1576954230%7300714]]W=O()p=a+W e=p+Z p=1046164+-1045908 j=e%p Z,a=j,1000241+-1000240 O=Z+a T=823407504%19360296 p=k[O]e=c..p c=e else O=I(989964+-1046443)p=E[O]O,T=I(499334+-555808),475474444%10390317 e=p[O]l=e end end else if T<2374954-48822 then if T<993638622%14371337 then K=g[M[706856-706854]]C=373937+-373724 y=K*C K=27552855017688-546491 s=y+K y=-475420+35184372564252 T=s%y g[M[-622351+622353]]=T T=9575370-(-317093)elseif T<-974234+3123069 then T=-689675+4413639 elseif T<831755031%18432528 then A=102569492%3266354>=936586-(-236249)T=A and 13024441-278205 or 1157335688%8436258 else W=G(5223624796%21473973,{H})Y={W()}T,s=E[I(643318+-699822)],{V(Y)}end else if 2948363382%15923884>T then h=3005664851%15573393 R=m[h]T=9762537-(-355950)h=g[d]B=R==h Ef=B elseif T<2436350932%14149461 then J=12652457-(-732374)<866664+11425238 Q=g[K]A=Q==J T=A and 10355078-(-373253)or 15610815-(-619550)else h,t=274792-274791,T R=m[h]h=11410359-(-68251)>-317257+12523526 B=R==h Ef,T=B,B and 1308996-(-1024013)or 11162527-1044040 end end end else if T<-814612+4487065 then if 3409087-121057>T then if 3108477-190441>T then s,T={K},E[I(-453994+397481)]elseif 2287290134%19035184>T then g[K]=a T=W W=g[K]T=W and 712269+1322115 or 2972088823%18877229 elseif T<4002911-838023 then T=9388059-52482 else y=I(104424-160913)T=E[y]C=-258908-(-258908)K=g[M[460903388%5834220]]y=T(K,C)T=4932355577%19473617 end else if 582813+2830241>T then s,C,K=3153841611%13556053,3056606483%17480867,I(880003-936505)y=K^C T=s-y s,y=I(185106+-241575),T T=s/y s={T}T=E[I(-664185+607707)]elseif T<-284097+3811339 then A,T=2654067107%17080617>1886047408%21752667,890653094%11124926 g[K]=A else s=2313758-(-163566)~=14033734-(-748037)g[K]=s T=-165049+824063 end end else if T>-322282+4455956 then if 910980482%11054217>T then C,Z=C+H,not N s=C<=k s=Z and s Z=C>=k Z=N and Z s=Z or s Z=9365092-309416 T=s and Z s=6533935-239007 T=T or s elseif T<812206+3802752 then g[K]=X T=z T=3693096884%21140425 else T=28835629%11838671 end else if 1965529040%8383656>T then H=S(H)v=S(v)k=S(k)J=S(J)C=nil O=S(O)j,v=nil,I(249758-306226)K=S(K)k,p,C,K=-422079+422081,nil,nil,nil e=nil Q=S(Q)Z,j=nil,I(-657342-(-600871))Q=u()N=S(N)H=u()Z=I(-906464-(-849993))g[H]=k l=nil N=E[Z]Z=I(-1043081-(-986567))k=N[Z]e=570991936%10573920 Z=u()N=u()g[N]=k k=1426396640%7352560 g[Z]=k k={}g[Q]=k l=I(211890-268369)J=E[v]v=I(868434-924906)k=J[v]v=E[l]p,T,l=e,6111876-(-312052),I(105125-161623)J=v[l]l=E[j]j=I(-454037-(-397553))v=l[j]l,j={},1065538801%7399575 e=1074289945%6886474 O=e e=-396310+396310 o=O<e e=j-O elseif T<3429947398%15093212 then T,s=E[I(-441586-(-385085))],{K}else T=-74556+5232843 end end end end end else if 2583671368%26239450>T then if T<-681790+11161286 then if T>257714817%9916319 then if 2689245591%24135827>T then if 3726267970%17447658>T then C=-886729+886930 K=g[M[-887745-(-887748)]]y=K*C C,K=803342881%7438360,232875-232618 s=y%K g[M[558655743%6207286]]=s K=g[M[81666255%3024676]]y=K~=C T=y and 10178819-470937 or 3284137760%13815381 elseif 1471524324%16607892>T then j=I(-741037+684563)l=E[j]J,T=l,1013592+14829437 else T=t T,X=4181490-(-413977),Ef end else if T<131120+10115966 then H,k=3722733197%15707735,-798941-(-798942)K=g[M[847606-847605]]C=K(k,H)K=812535967%4103717 y=C==K s,T=y,y and 11627472-(-632132)or-551605+11073568 elseif T<10658615-302564 then J,j=J+v,not l A=Q>=J A=j and A j=Q<=J j=l and j A=j or A j=2510784-669775 T=A and j A=11339090-21092 T=T or A else T=14347833-621929~=8366469-43721 T=T and 15576321-(-58288)or 15729051-487207 end end else if T>2562468237%13950639 then if 9806524-119071>T then z=T Ef=g[K]X,T=Ef,Ef and 440215756%11823923 or 1950612192%13420805 elseif T<1904949522%21784310 then Q,C=-803882+803884,548987954%9465309 K=g[M[-936502+936505]]y=K%C C=-20184+20197 N=g[M[-218439+218442]]H=N-y N=839204+-839172 k=H/N K=C-k H=g[M[952399+-952395]]T=2359220401%16331913 c=g[M[353814-353812]]A=Q^K Z=c/A N=H(Z)H,A=4295020114-52818,960738626%5489935 k=N%H N=-13806+13808 H=N^y C=k/H v=1213927417%12514713 H=g[M[1035168-1035164]]c=C%A A=4295679689-712393 Z=c*A N=H(Z)H=g[M[564141-564137]]Z=H(C)j=877695+-877439 k=N+Z c=1008117-942581 N=-503525-(-569061)H=k%N Z=k-H A=703575040%2780928 N=Z/c c=H%A J=H%v Q=H-J J,y,H=897124446%14469745,nil,nil A=Q/J C,J,k,K=nil,1699908064%7455736,nil,nil Q=N%J l=N%j v=N-l l,N=193254+-192998,nil J=v/l Z={c;A,Q,J}g[M[875186-875185]]=Z else y,s=I(-674928+618434),I(-697572+641083)T=E[s]s=T(y)s,T={},E[I(-171166+114691)]end else if T<3577430373%17843603 then T=909485+1409771 elseif T<2585193298%11103812 then Z,s=C,124737-124737 T=Z==s T=T and-808545+16442143 or 8085715-743375 elseif 2161909725%10449810>T then Q=g[N]T,C=2337511374%23973650,Q else c=657821+5771013<=2138930832%16483347 T=c and 2225842-(-920441)or 5429761-795312 end end end else if 1272920644%19117414>T then if T>2666641685%15622914 then if T<2838191430%11446583 then Q=198158+4517237<=1956091537%21587829 A=g[K]c=A==Q T=c and 3688982714%18334275 or 2960061095%17166053 elseif T<10752062-(-267914)then T=-297266+956280 else T=8538936-859742 end else if T<10605353-(-13048)then T=2176715404%20812075 K=g[M[643524471%2692571]]C=g[M[740563+-740560]]y=K==C s=y elseif 11599514-877929>T then W=g[Q]q,o=494044999%4016626,183668+-183662 Y=W(q,o)W,o=I(-108467+51986),I(-738520+682039)E[W]=Y q=E[o]o=697848-697846 W=q>o T=W and 12266763-(-725282)or 12420590-(-720701)elseif T<355586689%24632428 then T=-541960+11557270 else T=967347858%27216647>=13209277-(-702409)T=T and-1031550+5801202 or 11560780-(-829770)end end else if T<11177659-(-694338)then if T<-516505+11981062 then N,T,Z,A=nil,79997432%4286177,nil,c C[K]=A k,c=nil,nil elseif 3126123887%13966278>T then y=g[M[1022478-1022477]]s=#y y=-952222+952222 T=s==y T=T and 911185+1087170 or 8310204-885275 else Y=g[K]W,a=T,Y T=Y and-446438+12597370 or 1019683+1970143 end else if T<12795425-713977 then p,v,J=I(-171552+115073),I(-334870-(-278391)),I(306413+-362884)Q=E[J]J,T=I(586470+-642954),Z Z=Q[J]Q=u()g[Q]=Z J=E[v]j,v=T,I(-419226-(-362716))Z=J[v]e=E[p]l,v=e,T T=e and 1670602-(-229930)or 232545+7677634 elseif T<132822523%17242753 then T=10133585-(-603478)else T=3288859-299033 Y=l==j a=Y end end end end else if 966543+13502956>T then if 12641594-(-416412)>T then if T<5238569360%21866046 then if T<2024171009%15476150 then T=s and 12810983-388487 or-43929+5553138 elseif 986846+11350136>T then Q=948340-948334 A=Z==Q T=A and 2863844-(-569698)or 963239-304225 elseif 105680+12300843>T then T=-166922+15783319 else s=I(-918776-(-862277))A=w(814821+2577746,{})k,c=I(-873363-(-816887)),I(-155528+99043)T=E[s]y=g[M[1446105276%10633127]]C=E[k]Z=E[c]c={Z(A)}N,Z={V(c)},-352443-(-352445)H=N[Z]k=C(H)C=I(320-56810)K=y(k,C)y={K()}s=T(V(y))y=s K=g[M[-48007+48012]]s,T=K,K and 2481858385%19439710 or 122190438%10668385 end else if T<12552845-(-316295)then T=765098+1498189 elseif 1789611118%24675104>T then q,i=I(623560+-680036),I(687087+-743595)W=E[q]o=E[i]q=W(o)W=I(863010-919491)E[W]=q T=799422+-708682 else C=g[M[123002716%897830]]T=2528449867%20028664 K=C==y s=K end end else if-831115+14734419>T then if 14069645-948601>T then e=u()j={}p=f(-454122+12065238,{e,Z;H;N})d=nil O=u()r,v,o=I(-623253-(-566760)),nil,I(289177-345668)g[e]=j j=u()F=I(689918-746404)g[j]=p p,i={},{}g[O]=p p=E[o]m=g[O]T,J,x=E[I(415215+-471718)],nil,{[r]=m,[F]=d}o=p(i,x)v=I(-46225-10270)p=G(2736385017%15819113,{O,e;Q,Z;H;j})K,k=o,nil O=S(O)C=p H=S(H)l=nil Q=S(Q)l=22126428475115-(-137556)N=S(N)H=I(74849+-131326)Z=S(Z)k=E[H]s={}j=S(j)e=S(e)Z=I(-131961+75469)N=E[Z]J=C(v,l)C=nil Q=K[J]K,J=nil,I(-171055+114572)J=N[J]Z={J(N,Q)}H=k(V(Z))k=H()elseif T<-16665+13527970 then o=I(-248201+191720)W=E[o]o=I(434791+-491299)E[o]=W T=463866-373126 else T=g[M[-229680+229690]]K=g[M[-239804+239815]]y[T]=K T=g[M[220641-220629]]K={T(y)}T,s=E[I(76107+-132604)],{V(K)}end else if 902076+13091342>T then T=649346+642411~=10957358-57083 g[M[-498666-(-498667)]]=T T,s=E[I(-416311-(-359823))],{}elseif 14943197-774390>T then D=18955+-18954 g[K]=z h=g[r]T=Ef R=h+D B=m[R]t=l+B B=-1021917-(-1022173)Ef=t%B l=Ef R=g[x]B=j+R T,R=13796705-(-866229),-932193+932449 t=B%R j=t else y,T,s=U,I(138882+-195388),1661887458%13189583 K=u()C=399628138%2682068 k=C C=304733+-304732 H=C C=-288138+288138 N=H<C C=s-H g[K]=T T=3747443-(-726466)end end end else if T>2893633112%17233527 then if 16374132-287655>T then if 16699770-960951>T then s=I(670273+-726754)T=E[s]y=I(-276571-(-220063))s=E[y]y=I(223320-279828)E[y]=T y=I(-380117+323636)E[y]=s y=g[M[-197806-(-197807)]]K=y()T=941729058%13695471 elseif T<4402738614%23971835 then T=v a=P(-407313+7972454,{})e=170015285%4722645 v=u()o=I(805643-862119)g[v]=J j,O=-11751+11754,I(-716012-(-659527))J=g[Q]l=J(j,e)J=u()g[J]=l l,j=-890171+890171,991048960%12388112 T=-751175+1436764 p=E[O]O={p(a)}e={V(O)}O=275423-275421 p=e[O]a=I(586384+-642883)O=E[a]W=g[k]q=E[o]o=q(p)q=I(-139051-(-82561))Y=W(o,q)W={Y()}a=O(V(W))O=u()g[O]=a W=g[J]a,Y=346846605%13340254,W W=482600251%6521625 q=W W=290746+-290746 o=q<W W=a-q else A=69364+-69361 c=Z==A T=c and 10350942-(-404606)or 97310+7149666 end else if 495353+15877267>T then T=175496757%7531890 elseif 17508050-989137>T then Z,C=not N,H+C K=k>=C K=Z and K Z=C>=k Z=N and Z K=Z or K Z=1988512978%11696782 T=K and Z K=13623851-(-257469)T=T or K else T,s=E[I(-553457+496961)],{}end end else if T>2061925486%25904125 then if T<4299035383%17555231 then c=1020904-1020902 s=Z==c T=s and 2551674368%16874526 or 5178148798%20164868 elseif 16527031-902034>T then T=1400801096%16544921>=13790911-(-615288)g[K]=T T=2574376156%10859566 else s=g[K]c=I(1046891+-1103397)T=s~=c T=T and-772141+12867714 or-68096+15684493 end else if T<14477420-(-474969)then T=1529852-844263 F=S(F)d=S(d)a=S(a)i=S(i)m=nil r=S(r)x=S(x)elseif T<14596622-(-666087)then s,T={},E[I(274230+-330739)]elseif 731334058%20455528>T then T=602066+56948 else y,K=U[411136+-411135],U[-604058-(-604060)]T=g[M[-896604+896605]]C=T T=C[K]T=T and 1993144175%12917929 or-444439+8526584 end end end end end end end T=#L return V(s)end,{},function(E,I)local V=C(I)local U=function()return T(E,{},I,V)end return U end,function(E,I)local V=C(I)local U=function(...)return T(E,{...},I,V)end return U end,function(E,I)local V=C(I)local U=function(U)return T(E,{U},I,V)end return U end,function(E,I)local V=C(I)local U=function(U,M,L)return T(E,{U,M,L},I,V)end return U end,{},function(E)local I,T=556023161%2527378,E[-256583-(-256584)]while T do y[T],I=y[T]-(-40713+40714),I+(715282-715281)if y[T]==-525343+525343 then y[T],g[T]=nil,nil end T=E[I]end end return(H(-604395+14880460,{}))(V(s))end)(unpack or table[I(71436+-127910)],getfenv and getfenv()or _ENV,select,getmetatable,newproxy,{...},setmetatable)end)(...)
+-- ==================== 反作弊安全删除 ====================
+print = function() end
+warn = function() end
+printidentity = function() end
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+local LocalPlayer = Players.LocalPlayer
+local Camera = workspace.CurrentCamera
+
+local deletedCount = 0
+local function deleteIfExists(parent, ...)
+    local obj = parent
+    local parts = {...}
+    for _, part in ipairs(parts) do
+        if obj then obj = obj:FindFirstChild(part) else break end
+    end
+    if obj then pcall(function() obj:Destroy(); deletedCount = deletedCount + 1 end) return true end
+    return false
+end
+
+deleteIfExists(ReplicatedStorage, "Shared", "Core", "RateLimiter")
+deleteIfExists(ReplicatedStorage, "Vendor", "ReplicaService", "RateLimiter")
+deleteIfExists(ReplicatedStorage, "Shared", "Core", "GetAsset")
+deleteIfExists(ReplicatedStorage, "Client", "Core", "DebugTeleport")
+deleteIfExists(ReplicatedStorage, "Client", "Wanted", "Modules", "ClientPlayerFlags")
+deleteIfExists(ReplicatedStorage, "Client", "Wanted", "Objects", "DevvChassis", "Components", "Telemetry")
+deleteIfExists(ReplicatedStorage, "CmdrClient")
+deleteIfExists(ReplicatedStorage, "Vendor", "Cmdr")
+
+-- ==================== 加载 Airflow UI ====================
+local Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/PookiePepelsss/Airflow-UI/refs/heads/main/Source.luau"))()
+
+local Window = Airflow:CreateWindow({
+    Name = "港猫的通缉Wanted",
+    LoadingSubtitle = "作者港猫",
+    Icon = "wind",
+    ToggleUIKeybind = "RightShift",
+    Size = UDim2.fromOffset(700, 550),
+    MinSize = Vector2.new(480, 360),
+    MaxSize = Vector2.new(1000, 700),
+    MaxNotifications = 4,
+    KeepOnScreen = true,
+    OpenButton = { Title = "港猫", Icon = "wind" },
+    Loading = {
+        Enabled = true,
+        Title = "港猫的通缉Wanted",
+        Text = "正在启动",
+        Steps = { "准备界面", "加载图标", "即将完成" },
+        Duration = 1.5,
+    },
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = "GangMao-Wanted",
+        FileName = "default",
+    },
+    Home = {
+        Name = "首页",
+        Welcome = "你好, ",
+        Stats = { "FPS", "延迟", "执行器", "游戏", "地区", "时间" },
+        TimeFormat = "%H:%M",
+    },
+})
+
+-- ==================== 创建标签 ====================
+local T = {}
+T.wj   = Window:CreateTab({ Name = "玩家", Desc = "玩家功能", Icon = "users" })
+T.wsj  = Window:CreateTab({ Name = "万圣节功能", Desc = "万圣节", Icon = "rbxassetid://7734058599" })
+T.zx   = Window:CreateTab({ Name = "准心设置", Desc = "准心", Icon = "rbxassetid://7733666258" })
+T.gh   = Window:CreateTab({ Name = "光环", Desc = "光环", Icon = "crown" })
+T.fz   = Window:CreateTab({ Name = "进阶辅助瞄准", Desc = "自瞄", Icon = "crosshair" })
+T.bot  = Window:CreateTab({ Name = "范围", Desc = "碰撞箱", Icon = "target" })
+T.zj   = Window:CreateTab({ Name = "子弹追踪", Desc = "静默瞄准", Icon = "target" })
+T.ESP  = Window:CreateTab({ Name = "ESP", Desc = "透视", Icon = "eye" })
+
+-- ==================== 通用工具函数 ====================
+local function getCharacter()
+    if LocalPlayer and LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("Humanoid") then
+        return LocalPlayer.Character
+    end
+    return nil
+end
+
+-- ==================== 玩家页 (WJ) ====================
+local speedConn, currentSpeed = nil, 1
+local function updateChar()
+    local char = LocalPlayer.Character
+    local hum = char and char:FindFirstChildOfClass("Humanoid")
+    if speedConn then speedConn:Disconnect() speedConn = nil end
+    if not hum or currentSpeed <= 1 then return end
+    speedConn = RunService.Heartbeat:Connect(function()
+        if not LocalPlayer.Character then
+            speedConn:Disconnect() speedConn = nil
+            return
+        end
+        local h = LocalPlayer.Character.Humanoid
+        if h.MoveDirection.Magnitude > 0 then
+            LocalPlayer.Character:TranslateBy(h.MoveDirection * currentSpeed / 10)
+        end
+    end)
+end
+LocalPlayer.CharacterAdded:Connect(updateChar)
+task.spawn(updateChar)
+
+T.wj:CreateInput({
+    Name = "超级快跑",
+    PlaceholderText = "输入1~200数字",
+    CurrentValue = "1",
+    Numeric = true,
+    Flag = "WJ_Speed_Input",
+    Callback = function(val)
+        local num = tonumber(val)
+        if not num then return end
+        currentSpeed = math.clamp(num,1,200)
+        updateChar()
+    end,
+})
+T.wj:CreateSlider({
+    Name = "超级快跑",
+    Range = {1, 200},
+    Increment = 1,
+    CurrentValue = 1,
+    Flag = "WJ_Speed_Slider",
+    Callback = function(val)
+        currentSpeed = val
+        updateChar()
+    end,
+})
+
+local isInfiniteJumpEnabled = false
+UserInputService.JumpRequest:Connect(function()
+    if isInfiniteJumpEnabled then
+        local character = getCharacter()
+        if character then
+            local humanoid = character:FindFirstChildOfClass("Humanoid")
+            if humanoid then humanoid:ChangeState(Enum.HumanoidStateType.Jumping) end
+        end
+    end
+end)
+
+local FlyingEnabled = false
+local FlightSpeed = 150
+local CurrentAO, CurrentLV, CurrentMoverAttachment, FlightConnection
+local mt_fly = getrawmetatable(game)
+local old_fly_index = mt_fly.__index
+setreadonly(mt_fly, false)
+mt_fly.__index = newcclosure(function(self, key)
+    if FlyingEnabled and (key == "AssemblyLinearVelocity" or key == "Velocity") and self:IsA("BasePart") then
+        return Vector3.new(0, 0, 0)
+    end
+    return old_fly_index(self, key)
+end)
+setreadonly(mt_fly, true)
+
+local function getFlyControlModule()
+    local PlayerModule = LocalPlayer:WaitForChild("PlayerScripts"):WaitForChild("PlayerModule")
+    return require(PlayerModule:WaitForChild("ControlModule"))
+end
+local function setupFlyBodyMovers(character)
+    local hrp = character:WaitForChild("HumanoidRootPart")
+    local humanoid = character:WaitForChild("Humanoid")
+    local moverParent = workspace:FindFirstChildOfClass("Terrain") or workspace
+    local moverAttachment = Instance.new("Attachment", hrp)
+    moverAttachment.Name = "FlightAttachment"
+    local alignOrientation = Instance.new("AlignOrientation")
+    alignOrientation.Mode = Enum.OrientationAlignmentMode.OneAttachment
+    alignOrientation.RigidityEnabled = true
+    alignOrientation.MaxTorque = Vector3.new(9e9, 9e9, 9e9)
+    alignOrientation.CFrame = hrp.CFrame
+    alignOrientation.Attachment0 = moverAttachment
+    alignOrientation.Parent = moverParent
+    local linearVelocity = Instance.new("LinearVelocity")
+    linearVelocity.VectorVelocity = Vector3.new(0, 0, 0)
+    linearVelocity.MaxForce = 9e9
+    linearVelocity.Attachment0 = moverAttachment
+    linearVelocity.Parent = moverParent
+    return alignOrientation, linearVelocity, moverAttachment, humanoid
+end
+local function startFlying()
+    if FlyingEnabled then return end
+    local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+    if not character then return end
+    CurrentAO, CurrentLV, CurrentMoverAttachment = setupFlyBodyMovers(character)
+    FlyingEnabled = true
+    pcall(function() character.HumanoidRootPart:SetNetworkOwner(LocalPlayer) end)
+    local controlModule = getFlyControlModule()
+    FlightConnection = RunService.Heartbeat:Connect(function()
+        if not FlyingEnabled or not CurrentLV or not CurrentAO then
+            if FlightConnection then FlightConnection:Disconnect() FlightConnection = nil end
+            return
+        end
+        local moveVector = controlModule:GetMoveVector()
+        local cam = workspace.CurrentCamera
+        local F, B, L, R, Q, E = 0, 0, 0, 0, 0, 0
+        F = -moveVector.Z; B = moveVector.Z; L = -moveVector.X; R = moveVector.X
+        if UserInputService:IsKeyDown(Enum.KeyCode.W) then F = 1 end
+        if UserInputService:IsKeyDown(Enum.KeyCode.S) then B = 1 end
+        if UserInputService:IsKeyDown(Enum.KeyCode.A) then L = 1 end
+        if UserInputService:IsKeyDown(Enum.KeyCode.D) then R = 1 end
+        if UserInputService:IsKeyDown(Enum.KeyCode.Space) then Q = 1 end
+        if UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) then E = 1 end
+        local flightVector = (cam.CFrame.LookVector * (F - B) + cam.CFrame.RightVector * (R - L) + Vector3.new(0, 1, 0) * (Q - E))
+        if flightVector.Magnitude > 0 then
+            CurrentLV.VelocityConstraintMode = Enum.VelocityConstraintMode.Vector
+            CurrentLV.VectorVelocity = flightVector.Unit * FlightSpeed
+        else
+            CurrentLV.VectorVelocity = Vector3.new(0, 0, 0)
+        end
+        CurrentAO.CFrame = workspace.CurrentCamera.CFrame
+        if character and character:FindFirstChild("Humanoid") then character.Humanoid.PlatformStand = true end
+    end)
+end
+local function stopFlying()
+    if not FlyingEnabled then return end
+    FlyingEnabled = false
+    if FlightConnection then FlightConnection:Disconnect() FlightConnection = nil end
+    local character = LocalPlayer.Character
+    if character and character:FindFirstChild("Humanoid") then character.Humanoid.PlatformStand = false end
+    if CurrentAO then CurrentAO:Destroy() CurrentAO = nil end
+    if CurrentLV then CurrentLV:Destroy() CurrentLV = nil end
+    if CurrentMoverAttachment then CurrentMoverAttachment:Destroy() CurrentMoverAttachment = nil end
+end
+T.wj:CreateToggle({ Name = "飞行模式", CurrentValue = false, Flag = "WJ_Fly", Callback = function(v) if v then startFlying() else stopFlying() end end })
+T.wj:CreateSlider({ Name = "飞行速度", Range = {50, 400}, Increment = 10, CurrentValue = 150, Flag = "WJ_FlySpeed", Callback = function(val) FlightSpeed = val end })
+
+local SpinEnabled, SpinSpeed, SpinConnection = false, 5, nil
+local function StartSpin()
+    if SpinConnection then return end
+    SpinConnection = RunService.RenderStepped:Connect(function(dt)
+        if not SpinEnabled then return end
+        local char = LocalPlayer.Character
+        if not char then return end
+        local hrp = char:FindFirstChild("HumanoidRootPart")
+        if not hrp then return end
+        hrp.CFrame = hrp.CFrame * CFrame.Angles(0, math.rad(SpinSpeed) * dt * 60, 0)
+    end)
+end
+local function StopSpin()
+    SpinEnabled = false
+    if SpinConnection then SpinConnection:Disconnect() SpinConnection = nil end
+end
+LocalPlayer.CharacterAdded:Connect(function() if SpinEnabled then task.wait(0.5) if not SpinConnection then StartSpin() end end end)
+T.wj:CreateToggle({ Name = "人物自转", CurrentValue = false, Flag = "WJ_Spin", Callback = function(v) SpinEnabled = v; if v then StartSpin() else StopSpin() end end })
+T.wj:CreateSlider({ Name = "旋转速度", Range = {1, 200}, Increment = 1, CurrentValue = 5, Flag = "WJ_SpinSpeed", Callback = function(v) SpinSpeed = v end })
+
+local CONFIG = { defaultSize = 1, minSize = 1, maxSize = 5000, loadDelay = 0.15 }
+local HeadScaler = { enabled = false, headSize = CONFIG.defaultSize, heartbeatConn = nil, playerAddedConn = nil, charBindings = {} }
+function HeadScaler:UpdateAllHeads()
+    local size = Vector3.new(self.headSize, self.headSize, self.headSize)
+    for _, player in ipairs(Players:GetPlayers()) do
+        if player ~= LocalPlayer and player.Character then
+            local head = player.Character:FindFirstChild("Head")
+            if head then pcall(function() head.Size = size; head.CanCollide = false end) end
+        end
+    end
+end
+function HeadScaler:BindPlayer(player)
+    if self.charBindings[player] then return end
+    self.charBindings[player] = player.CharacterAdded:Connect(function() task.wait(CONFIG.loadDelay); self:UpdateAllHeads() end)
+    task.spawn(function() task.wait(CONFIG.loadDelay); self:UpdateAllHeads() end)
+end
+function HeadScaler:ClearAll()
+    if self.heartbeatConn then self.heartbeatConn:Disconnect() self.heartbeatConn = nil end
+    if self.playerAddedConn then self.playerAddedConn:Disconnect() self.playerAddedConn = nil end
+    for player, conn in pairs(self.charBindings) do conn:Disconnect(); self.charBindings[player] = nil end
+end
+function HeadScaler:SetEnabled(enable)
+    if self.enabled == enable then return end
+    self:ClearAll(); self.enabled = enable
+    if not enable then return end
+    self.heartbeatConn = RunService.Heartbeat:Connect(function() self:UpdateAllHeads() end)
+    for _, player in ipairs(Players:GetPlayers()) do if player ~= LocalPlayer then self:BindPlayer(player) end end
+    self.playerAddedConn = Players.PlayerAdded:Connect(function(player) if player ~= LocalPlayer then self:BindPlayer(player) end end)
+    self:UpdateAllHeads()
+end
+function HeadScaler:SetSize(newSize)
+    self.headSize = math.clamp(newSize, CONFIG.minSize, CONFIG.maxSize)
+    if self.enabled then self:UpdateAllHeads() end
+end
+Players.PlayerRemoving:Connect(function(player) if HeadScaler.charBindings[player] then HeadScaler.charBindings[player]:Disconnect(); HeadScaler.charBindings[player] = nil end end)
+T.wj:CreateToggle({ Name = "修改别人头部大小", CurrentValue = false, Flag = "WJ_HeadScale", Callback = function(value) HeadScaler:SetEnabled(value) end })
+T.wj:CreateInput({ Name = "别人头部尺寸", PlaceholderText = "输入数字 1-5000", CurrentValue = "1", Numeric = true, Flag = "WJ_HeadSize", Callback = function(value) local num = tonumber(value); if num then HeadScaler:SetSize(num) end end })
+T.wj:CreateToggle({ Name = "无限跳", CurrentValue = false, Flag = "WJ_InfJump", Callback = function(state) isInfiniteJumpEnabled = state end })
+
+local clipConn
+T.wj:CreateToggle({
+    Name = "穿墙", CurrentValue = false, Flag = "WJ_Noclip",
+    Callback = function(enabled)
+        if clipConn then clipConn:Disconnect() clipConn = nil end
+        if enabled then
+            clipConn = RunService.Stepped:Connect(function()
+                local char = LocalPlayer.Character
+                if not char then return end
+                for _, part in ipairs(char:GetChildren()) do if part:IsA("BasePart") then part.CanCollide = false end end
+            end)
+        else
+            local char = LocalPlayer.Character
+            if char then for _, part in ipairs(char:GetChildren()) do if part:IsA("BasePart") then part.CanCollide = true end end end
+        end
+    end,
+})
+T.wj:CreateButton({ Name = "踏空行走", Callback = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))() end })
+T.wj:CreateButton({
+    Name = "定", Callback = function()
+        local player = LocalPlayer; local freeze, lockY = false, nil; local character, root
+        local function LoadCharacter() character = player.Character or player.CharacterAdded:Wait(); root = character:WaitForChild("HumanoidRootPart") end
+        LoadCharacter(); player.CharacterAdded:Connect(function() task.wait(1) LoadCharacter() end)
+        local gui = Instance.new("ScreenGui"); gui.Name = "AirFreezeUI"; gui.ResetOnSpawn = false; gui.Parent = player:WaitForChild("PlayerGui")
+        local main = Instance.new("Frame"); main.Size = UDim2.new(0,90,0,90); main.Position = UDim2.new(0.5,-70,0.65,0); main.BackgroundColor3 = Color3.fromRGB(25,25,30); main.Parent = gui
+        local corner = Instance.new("UICorner"); corner.CornerRadius = UDim.new(0,12); corner.Parent = main
+        local title = Instance.new("TextLabel"); title.Size = UDim2.new(1,0,0,26); title.BackgroundTransparency = 1; title.Text = "定"; title.TextColor3 = Color3.new(1,1,1); title.TextSize = 16; title.Parent = main
+        local toggle = Instance.new("TextButton"); toggle.Size = UDim2.new(0,100,0,32); toggle.Position = UDim2.new(0.5,-50,0.48,0); toggle.BackgroundColor3 = Color3.fromRGB(0,170,255); toggle.Text = "开启"; toggle.TextColor3 = Color3.new(1,1,1); toggle.TextSize = 14; toggle.Parent = main
+        local tc = Instance.new("UICorner"); tc.CornerRadius = UDim.new(0,8); tc.Parent = toggle
+        toggle.MouseButton1Click:Connect(function()
+            freeze = not freeze
+            if freeze then toggle.Text = "关闭"; toggle.BackgroundColor3 = Color3.fromRGB(255,70,70); if root then lockY = root.Position.Y end
+            else toggle.Text = "开启"; toggle.BackgroundColor3 = Color3.fromRGB(0,170,255); lockY = nil end
+        end)
+        RunService.Heartbeat:Connect(function()
+            if freeze and root and lockY then
+                local pos = root.Position; root.AssemblyLinearVelocity = Vector3.zero; root.AssemblyAngularVelocity = Vector3.zero; root.CFrame = CFrame.new(pos.X, lockY, pos.Z) * root.CFrame.Rotation
+            end
+        end)
+    end,
+})
+
+-- ==================== 万圣节 (WSJ) ====================
+do
+    local WSJ_RunService = game:GetService("RunService")
+    local WSJ_Workspace = workspace
+    local WSJ_Debris = game:GetService("Debris")
+    local WSJ_SoundService = game:GetService("SoundService")
+    
+    local DevvFolder = ReplicatedStorage:FindFirstChild("Devv") or ReplicatedStorage:FindFirstChild("devv")
+    if DevvFolder then
+        local DevvModule  = require(DevvFolder)
+        local Network     = DevvModule.load("Network")
+        local ClientTools = require(ReplicatedStorage.Client.Wanted.Modules.ClientTools)
+        local MathUtil    = DevvModule.load("MathUtil")
+        local nuid        = DevvModule.load("NUID")
+        local fireServer  = Network.FireServer
+
+        local MobAuraConfig = { Enabled = false, Range = 300, Interval = 0.01, ShowTracer = true, TracerColor = Color3.fromRGB(255, 80, 80), TracerWidth = 0.15, TracerLife = 0.2, PlaySound = true, SoundId = "rbxassetid://6607204501", SoundVolume = 0.4 }
+        local MobChamsConfig = { Enabled = false, TextSize = 10, EspColor = Color3.fromRGB(0, 255, 0) }
+
+        local TracerFolder = WSJ_Workspace:FindFirstChild("__MobTracers") or Instance.new("Folder", WSJ_Workspace)
+        TracerFolder.Name = "__MobTracers"
+
+        local function createTracer(fromPos, toPos)
+            if not MobAuraConfig.ShowTracer then return end
+            pcall(function()
+                local a0 = Instance.new("Attachment", TracerFolder); a0.WorldPosition = fromPos
+                local a1 = Instance.new("Attachment", TracerFolder); a1.WorldPosition = toPos
+                local beam = Instance.new("Beam", TracerFolder)
+                beam.Attachment0, beam.Attachment1 = a0, a1
+                beam.Color = ColorSequence.new(MobAuraConfig.TracerColor)
+                beam.Width0, beam.Width1 = MobAuraConfig.TracerWidth, MobAuraConfig.TracerWidth
+                beam.LightEmission, beam.LightInfluence, beam.FaceCamera = 1, 0, true
+                beam.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0.1), NumberSequenceKeypoint.new(1, 0.9)})
+                WSJ_Debris:AddItem(beam, MobAuraConfig.TracerLife); WSJ_Debris:AddItem(a0, MobAuraConfig.TracerLife); WSJ_Debris:AddItem(a1, MobAuraConfig.TracerLife)
+            end)
+        end
+        local function playHitSound()
+            if not MobAuraConfig.PlaySound then return end
+            pcall(function()
+                local snd = Instance.new("Sound", WSJ_SoundService)
+                snd.SoundId, snd.Volume = MobAuraConfig.SoundId, MobAuraConfig.SoundVolume
+                snd:Play(); WSJ_Debris:AddItem(snd, 1)
+            end)
+        end
+
+        WSJ_RunService.RenderStepped:Connect(function()
+            local mobsFolder = WSJ_Workspace:FindFirstChild("Mobs")
+            if not mobsFolder then return end
+            if not MobChamsConfig.Enabled then
+                for _, mob in ipairs(mobsFolder:GetChildren()) do
+                    if mob:IsA("Model") then
+                        local hl = mob:FindFirstChild("__MobHighlight"); if hl then hl:Destroy() end
+                        local head = mob:FindFirstChild("Head") or mob:FindFirstChild("HumanoidRootPart")
+                        if head then local bb = head:FindFirstChild("__MobNameTag"); if bb then bb:Destroy() end end
+                    end
+                end
+                return 
+            end
+            for _, mob in ipairs(mobsFolder:GetChildren()) do
+                if mob:IsA("Model") then
+                    pcall(function()
+                        local head = mob:FindFirstChild("Head") or mob:FindFirstChild("HumanoidRootPart")
+                        local hum = mob:FindFirstChildOfClass("Humanoid")
+                        if head and hum then
+                            local hl = mob:FindFirstChild("__MobHighlight")
+                            if not hl then hl = Instance.new("Highlight"); hl.Name = "__MobHighlight"; hl.FillTransparency = 0.3; hl.OutlineTransparency = 0; hl.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop; hl.Parent = mob end
+                            hl.FillColor = MobChamsConfig.EspColor; hl.OutlineColor = MobChamsConfig.EspColor
+                            local bb = head:FindFirstChild("__MobNameTag")
+                            if not bb then
+                                bb = Instance.new("BillboardGui"); bb.Name = "__MobNameTag"; bb.Size = UDim2.new(0, 100, 0, 25); bb.StudsOffset = Vector3.new(0, 1.5, 0); bb.AlwaysOnTop = true; bb.Parent = head
+                                local textName = Instance.new("TextLabel"); textName.Name = "TagText"; textName.Size = UDim2.new(1, 0, 0.5, 0); textName.BackgroundTransparency = 1; textName.Font = Enum.Font.GothamBold; textName.TextSize = MobChamsConfig.TextSize; textName.TextStrokeTransparency = 0.2; textName.TextColor3 = MobChamsConfig.EspColor; textName.Text = "港猫的小弟"; textName.Parent = bb
+                                local textHealth = Instance.new("TextLabel"); textHealth.Name = "HealthText"; textHealth.Size = UDim2.new(1, 0, 0.5, 0); textHealth.Position = UDim2.new(0, 0, 0.5, 0); textHealth.BackgroundTransparency = 1; textHealth.Font = Enum.Font.GothamBold; textHealth.TextSize = MobChamsConfig.TextSize; textHealth.TextStrokeTransparency = 0.2; textHealth.TextColor3 = Color3.new(1, 1, 1); textHealth.Parent = bb
+                            end
+                            local realHealth = mob:GetAttribute("health") or hum.Health
+                            local maxHealth = mob:GetAttribute("maxHealth") or hum.MaxHealth
+                            local tagText = bb:FindFirstChild("TagText"); if tagText then tagText.TextColor3 = MobChamsConfig.EspColor; tagText.TextSize = MobChamsConfig.TextSize end
+                            local healthText = bb:FindFirstChild("HealthText"); if healthText then healthText.Text = string.format("HP: %d/%d", math.floor(realHealth), math.floor(maxHealth)); healthText.TextSize = MobChamsConfig.TextSize; healthText.TextColor3 = (realHealth < maxHealth * 0.3) and Color3.fromRGB(255, 50, 50) or Color3.new(1, 1, 1) end
+                        end
+                    end)
+                end
+            end
+        end)
+
+        local function getClosestMob()
+            local myChar = LocalPlayer.Character; if not myChar then return nil end
+            local myHRP = myChar:FindFirstChild("HumanoidRootPart"); if not myHRP then return nil end
+            local closestMob = nil; local minDist = math.huge; local mobsFolder = WSJ_Workspace:FindFirstChild("Mobs"); if not mobsFolder then return nil end
+            for _, mob in ipairs(mobsFolder:GetChildren()) do
+                local hum = mob:FindFirstChildOfClass("Humanoid"); local hrp = mob:FindFirstChild("HumanoidRootPart")
+                if hum and hrp and hum.Health > 0 then
+                    local dist = (myHRP.Position - hrp.Position).Magnitude
+                    if dist <= MobAuraConfig.Range and dist < minDist then minDist = dist; closestMob = hrp end
+                end
+            end
+            return closestMob
+        end
+
+        local function fireAtMob(targetPart)
+            local char = LocalPlayer.Character; local myHead = char and char:FindFirstChild("Head"); if not myHead then return end
+            local ok, tool = pcall(ClientTools.GetLocalEquippedTool); if not ok or not tool or not tool.toolId then return end
+            local ts = tool.toolState
+            if ts and ts.ammo and ts.ammo <= 0 then pcall(fireServer, "reload", tool.toolId); pcall(fireServer, "chamber", tool.toolId); return end
+            local targetPos = targetPart.Position; local originPos = myHead.Position; local dir = targetPos - originPos; local bulletId = nuid(); local shootCF = MathUtil.CompressCFrame(CFrame.new(originPos, targetPos))
+            pcall(function() fireServer("shoot", tool.toolId, shootCF, { { bulletId, shootCF } }) end)
+            if ts and ts.ammo then ts.ammo = ts.ammo - 1 end
+            createTracer(originPos, targetPos); playHitSound()
+            local unit = dir.Magnitude > 0.001 and dir.Unit or myHead.CFrame.LookVector
+            local args = { { massLimit = 5, hit = targetPart, position = targetPos, normal = -unit, material = targetPart.Material or Enum.Material.Plastic, distance = dir.Magnitude, collisionPoint = targetPos, direction = unit, speed = 1196.285, source = { sourceType = "Bullet", sourceId = bulletId, sourceToolId = tool.toolId, sourcePlayerId = LocalPlayer.UserId }, hitName = "HumanoidRootPart", hitType = "mob", mobType = targetPart.Parent.Name } }
+            pcall(function() fireServer("registerProjectileHits", bulletId, tool.toolId, args) end)
+        end
+
+        task.spawn(function()
+            while true do
+                if MobAuraConfig.Enabled then pcall(function() local mobPart = getClosestMob(); if mobPart then fireAtMob(mobPart) end end); task.wait(MobAuraConfig.Interval)
+                else task.wait(0.5) end
+            end
+        end)
+
+        T.wsj:CreateToggle({ Name = "启用怪物光环", CurrentValue = false, Flag = "WSJ_Aura", Callback = function(v) MobAuraConfig.Enabled = v; Airflow:Notify({ Title = "光环", Content = v and "已开启" or "已关闭", Type = "Info", Duration = 2 }) end })
+        T.wsj:CreateSlider({ Name = "最大攻击距离", Range = {50, 2000}, Increment = 10, CurrentValue = 300, Flag = "WSJ_Range", Callback = function(v) MobAuraConfig.Range = v end })
+        T.wsj:CreateSlider({ Name = "极限射速", Range = {0.01, 1}, Increment = 0.01, CurrentValue = 0.01, Flag = "WSJ_Interval", Callback = function(v) MobAuraConfig.Interval = v end })
+        T.wsj:CreateToggle({ Name = "显示弹道射线", CurrentValue = true, Flag = "WSJ_Tracer", Callback = function(v) MobAuraConfig.ShowTracer = v end })
+        T.wsj:CreateToggle({ Name = "播放命中音效", CurrentValue = true, Flag = "WSJ_Sound", Callback = function(v) MobAuraConfig.PlaySound = v end })
+        T.wsj:CreateDropdown({ Name = "选择音效", Options = { "Neverlose", "Gamesense", "Fatality", "Minecraft", "经典叮叮叮" }, CurrentOption = "Neverlose", Flag = "WSJ_SndSelect", Callback = function(v) local map = { ["Neverlose"] = "rbxassetid://6607204501", ["Gamesense"] = "rbxassetid://5633695679", ["Fatality"] = "rbxassetid://6607142036", ["Minecraft"] = "rbxassetid://7151570575", ["经典叮叮叮"] = "rbxassetid://4590662766" }; MobAuraConfig.SoundId = map[v] or "rbxassetid://6607204501" end })
+        T.wsj:CreateToggle({ Name = "启用怪物内透", CurrentValue = false, Flag = "WSJ_Chams", Callback = function(v) MobChamsConfig.Enabled = v; Airflow:Notify({ Title = "内透", Content = v and "已开启" or "已关闭", Type = "Info", Duration = 2 }) end })
+        T.wsj:CreateSlider({ Name = "字体大小", Range = {8, 18}, Increment = 1, CurrentValue = 10, Flag = "WSJ_ChamsSize", Callback = function(v) MobChamsConfig.TextSize = v end })
+        T.wsj:CreateDropdown({ Name = "透视颜色", Options = { "绿色", "红色", "蓝色", "紫色", "黄色", "白色" }, CurrentOption = "绿色", Flag = "WSJ_ChamsColor", Callback = function(v) local map = { ["绿色"] = Color3.fromRGB(0, 255, 0), ["红色"] = Color3.fromRGB(255, 50, 50), ["蓝色"] = Color3.fromRGB(50, 150, 255), ["紫色"] = Color3.fromRGB(180, 50, 255), ["黄色"] = Color3.fromRGB(255, 255, 50), ["白色"] = Color3.fromRGB(255, 255, 255) }; MobChamsConfig.EspColor = map[v] or Color3.fromRGB(0, 255, 0) end })
+    end
+
+    local ZM_Enabled, ZM_ScaleMultiplier, ZM_HighlightColor, ZM_OrigData, ZM_Conn = false, 2.0, Color3.fromRGB(255, 50, 50), {}, nil
+    local function ZM_Cleanup()
+        local mobsFolder = workspace:FindFirstChild("Mobs")
+        if mobsFolder then for _, mob in ipairs(mobsFolder:GetChildren()) do if mob:IsA("Model") then local hl = mob:FindFirstChild("NPC_Marker"); if hl then hl:Destroy() end; if ZM_OrigData[mob] then pcall(function() mob:ScaleTo(ZM_OrigData[mob].Scale) end) end end end end
+        table.clear(ZM_OrigData)
+    end
+    local function ZM_Tick()
+        local mobsFolder = workspace:FindFirstChild("Mobs"); if not mobsFolder then return end
+        for _, mob in ipairs(mobsFolder:GetChildren()) do
+            if mob:IsA("Model") then
+                local hum = mob:FindFirstChildOfClass("Humanoid")
+                if hum and hum.Health > 0 then
+                    local hl = mob:FindFirstChild("NPC_Marker")
+                    if not hl then hl = Instance.new("Highlight"); hl.Name = "NPC_Marker"; hl.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop; hl.FillTransparency = 0.5; hl.OutlineTransparency = 0; hl.Parent = mob end
+                    hl.FillColor = ZM_HighlightColor; hl.OutlineColor = ZM_HighlightColor
+                    if not ZM_OrigData[mob] then local origScale = 1; pcall(function() origScale = mob:GetScale() end); ZM_OrigData[mob] = { Scale = origScale } end
+                    local targetScale = ZM_OrigData[mob].Scale * ZM_ScaleMultiplier; local currentScale = 1; pcall(function() currentScale = mob:GetScale() end)
+                    if math.abs(currentScale - targetScale) > 0.01 then pcall(function() mob:ScaleTo(targetScale); for _, part in ipairs(mob:GetDescendants()) do if part:IsA("BasePart") then part.Transparency = 0; part.CanCollide = true; part.Massless = true end end end) end
+                end
+            end
+        end
+    end
+    local function ZM_Start() if ZM_Conn then return end; ZM_Conn = RunService.RenderStepped:Connect(ZM_Tick) end
+    local function ZM_Stop() if ZM_Conn then ZM_Conn:Disconnect(); ZM_Conn = nil end; ZM_Cleanup() end
+    T.wsj:CreateToggle({ Name = "开启僵尸范围", CurrentValue = false, Flag = "WSJ_ZM", Callback = function(v) ZM_Enabled = v; if v then ZM_Start(); Airflow:Notify({ Title = "僵尸范围", Content = "已开启", Type = "Success", Duration = 2 }) else ZM_Stop(); Airflow:Notify({ Title = "僵尸范围", Content = "已关闭", Type = "Info", Duration = 2 }) end end })
+    T.wsj:CreateSlider({ Name = "实体放大倍数", Range = {1.0, 5.0}, Increment = 0.5, CurrentValue = 2.0, Flag = "WSJ_ZMScale", Callback = function(v) ZM_ScaleMultiplier = v end })
+    T.wsj:CreateDropdown({ Name = "高亮颜色", Options = { "红色", "绿色", "蓝色", "黄色", "紫色", "白色", "青色" }, CurrentOption = "红色", Flag = "WSJ_ZMColor", Callback = function(v) local map = { ["红色"] = Color3.fromRGB(255, 50, 50), ["绿色"] = Color3.fromRGB(50, 255, 50), ["蓝色"] = Color3.fromRGB(50, 150, 255), ["黄色"] = Color3.fromRGB(255, 255, 50), ["紫色"] = Color3.fromRGB(180, 50, 255), ["白色"] = Color3.fromRGB(255, 255, 255), ["青色"] = Color3.fromRGB(50, 255, 255) }; ZM_HighlightColor = map[v] or Color3.fromRGB(255, 50, 50) end })
+end
+
+-- ==================== 准心设置 (ZX) ====================
+do
+    local CFG = { Enabled = true, Style = "十字", Color = Color3.fromRGB(0, 255, 160), Size = 12, Thickness = 2, Gap = 4, Transparency = 0, DotSize = 2, FollowMouse = false, Rotate = false, RotateSpeed = 60, Rotation = 0, AutoColor = true, ColorSpeed = 0.3, ColorHue = 0 }
+    local ScreenGui = Instance.new("ScreenGui"); ScreenGui.Name = "CustomCrosshair"; ScreenGui.ResetOnSpawn = false; ScreenGui.IgnoreGuiInset = true; ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling; ScreenGui.DisplayOrder = 9999
+    local ok = pcall(function() ScreenGui.Parent = game:GetService("CoreGui") end)
+    if not ok or not ScreenGui.Parent then ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui") end
+    local Container = Instance.new("Frame"); Container.Name = "Container"; Container.AnchorPoint = Vector2.new(0.5, 0.5); Container.Position = UDim2.fromScale(0.5, 0.5); Container.Size = UDim2.fromOffset(100, 100); Container.BackgroundTransparency = 1; Container.Parent = ScreenGui
+    local Lines = Instance.new("Frame"); Lines.Name = "Lines"; Lines.AnchorPoint = Vector2.new(0.5, 0.5); Lines.Position = UDim2.fromScale(0.5, 0.5); Lines.Size = UDim2.fromOffset(0, 0); Lines.BackgroundTransparency = 1; Lines.Parent = Container
+    local Elements = {}
+    local function ClearElements() for _, el in ipairs(Elements) do if el and el.Parent then el:Destroy() end end table.clear(Elements) end
+    local function CreateLine(width, height, offsetX, offsetY)
+        local line = Instance.new("Frame"); line.AnchorPoint = Vector2.new(0.5, 0.5); line.Position = UDim2.new(0.5, offsetX, 0.5, offsetY); line.Size = UDim2.fromOffset(width, height); line.BackgroundColor3 = CFG.Color; line.BackgroundTransparency = CFG.Transparency; line.BorderSizePixel = 0; line.Parent = Lines; table.insert(Elements, line); return line
+    end
+    local function CreateDot(size)
+        local dot = Instance.new("Frame"); dot.AnchorPoint = Vector2.new(0.5, 0.5); dot.Position = UDim2.fromScale(0.5, 0.5); dot.Size = UDim2.fromOffset(size, size); dot.BackgroundColor3 = CFG.Color; dot.BackgroundTransparency = CFG.Transparency; dot.BorderSizePixel = 0; dot.Parent = Lines
+        local corner = Instance.new("UICorner"); corner.CornerRadius = UDim.new(1, 0); corner.Parent = dot; table.insert(Elements, dot); return dot
+    end
+    local function CreateCircle(size, thickness)
+        local circle = Instance.new("Frame"); circle.AnchorPoint = Vector2.new(0.5, 0.5); circle.Position = UDim2.fromScale(0.5, 0.5); circle.Size = UDim2.fromOffset(size, size); circle.BackgroundTransparency = 1; circle.Parent = Lines
+        local corner = Instance.new("UICorner"); corner.CornerRadius = UDim.new(1, 0); corner.Parent = circle
+        local stroke = Instance.new("UIStroke"); stroke.Color = CFG.Color; stroke.Thickness = thickness; stroke.Transparency = CFG.Transparency; stroke.Parent = circle; table.insert(Elements, circle); return circle
+    end
+    local function UpdateElementColors()
+        for _, el in ipairs(Elements) do
+            if el:IsA("Frame") then
+                local stroke = el:FindFirstChildOfClass("UIStroke")
+                if stroke then stroke.Color = CFG.Color; stroke.Transparency = CFG.Transparency
+                else el.BackgroundColor3 = CFG.Color; el.BackgroundTransparency = CFG.Transparency end
+            end
+        end
+    end
+    local function DrawCrosshair()
+        ClearElements(); if not CFG.Enabled then return end
+        local S, T, G = CFG.Size, CFG.Thickness, CFG.Gap; local style = CFG.Style
+        if style == "十字" then CreateLine(T, S, 0, -(G + S/2)); CreateLine(T, S, 0, (G + S/2)); CreateLine(S, T, -(G + S/2), 0); CreateLine(S, T, (G + S/2), 0)
+        elseif style == "点" then CreateDot(CFG.DotSize * 2)
+        elseif style == "圆" then CreateCircle(S * 2, T)
+        elseif style == "十字+点" then CreateLine(T, S, 0, -(G + S/2)); CreateLine(T, S, 0, (G + S/2)); CreateLine(S, T, -(G + S/2), 0); CreateLine(S, T, (G + S/2), 0); CreateDot(CFG.DotSize * 2)
+        elseif style == "圆+点" then CreateCircle(S * 2, T); CreateDot(CFG.DotSize * 2)
+        elseif style == "X形" then local offsets = { {G + S/2, 0}, {-(G + S/2), 0}, {0, G + S/2}, {0, -(G + S/2)} }; for _, off in ipairs(offsets) do local line = CreateLine(T, S, off[1], off[2]); line.Rotation = 45 end
+        elseif style == "括号" then
+            local B = S; CreateLine(B, T, 0, -(G + B)); CreateLine(T, T*3, -(B/2), -(G + B) + T*1.5); CreateLine(T, T*3, (B/2), -(G + B) + T*1.5)
+            CreateLine(B, T, 0, (G + B)); CreateLine(T, T*3, -(B/2), (G + B) - T*1.5); CreateLine(T, T*3, (B/2), (G + B) - T*1.5)
+            CreateLine(T, B, -(G + B), 0); CreateLine(T*3, T, -(G + B) + T*1.5, -(B/2)); CreateLine(T*3, T, -(G + B) + T*1.5, (B/2))
+            CreateLine(T, B, (G + B), 0); CreateLine(T*3, T, (G + B) - T*1.5, -(B/2)); CreateLine(T*3, T, (G + B) - T*1.5, (B/2))
+        end
+        UpdateElementColors()
+    end
+    RunService.RenderStepped:Connect(function(dt)
+        if CFG.FollowMouse then local m = UserInputService:GetMouseLocation(); Container.Position = UDim2.fromOffset(m.X, m.Y) else Container.Position = UDim2.fromScale(0.5, 0.5) end
+        if CFG.Rotate then CFG.Rotation = (CFG.Rotation + CFG.RotateSpeed * dt) % 360; Container.Rotation = CFG.Rotation end
+        if CFG.AutoColor then CFG.ColorHue = (CFG.ColorHue + CFG.ColorSpeed * dt) % 1; CFG.Color = Color3.fromHSV(CFG.ColorHue, 1, 1); UpdateElementColors() end
+    end)
+    T.zx:CreateToggle({ Name = "启用准星", CurrentValue = true, Flag = "ZX_Enable", Callback = function(v) CFG.Enabled = v; Container.Visible = v; DrawCrosshair() end })
+    T.zx:CreateDropdown({ Name = "准星样式", Options = { "十字", "点", "圆", "十字+点", "圆+点", "X形", "括号" }, CurrentOption = "十字", Flag = "ZX_Style", Callback = function(v) CFG.Style = v; DrawCrosshair() end })
+    T.zx:CreateToggle({ Name = "跟随鼠标", CurrentValue = false, Flag = "ZX_Mouse", Callback = function(v) CFG.FollowMouse = v end })
+    T.zx:CreateToggle({ Name = "启用旋转", CurrentValue = false, Flag = "ZX_Rotate", Callback = function(v) CFG.Rotate = v; if not v then CFG.Rotation = 0; Container.Rotation = 0 end end })
+    T.zx:CreateSlider({ Name = "旋转速度", Range = {5, 360}, Increment = 5, CurrentValue = 60, Flag = "ZX_RotSpeed", Callback = function(v) CFG.RotateSpeed = v end })
+    T.zx:CreateToggle({ Name = "启用自动变色", CurrentValue = true, Flag = "ZX_AutoColor", Callback = function(v) CFG.AutoColor = v end })
+    T.zx:CreateSlider({ Name = "变色速度", Range = {0.05, 2}, Increment = 0.05, CurrentValue = 0.3, Flag = "ZX_ColorSpeed", Callback = function(v) CFG.ColorSpeed = v end })
+    T.zx:CreateSlider({ Name = "准星大小", Range = {2, 40}, Increment = 1, CurrentValue = 12, Flag = "ZX_Size", Callback = function(v) CFG.Size = v; DrawCrosshair() end })
+    T.zx:CreateSlider({ Name = "线条厚度", Range = {1, 8}, Increment = 1, CurrentValue = 2, Flag = "ZX_Thick", Callback = function(v) CFG.Thickness = v; DrawCrosshair() end })
+    T.zx:CreateSlider({ Name = "中心间隙", Range = {0, 30}, Increment = 1, CurrentValue = 4, Flag = "ZX_Gap", Callback = function(v) CFG.Gap = v; DrawCrosshair() end })
+    T.zx:CreateSlider({ Name = "中心点大小", Range = {1, 10}, Increment = 1, CurrentValue = 2, Flag = "ZX_Dot", Callback = function(v) CFG.DotSize = v; DrawCrosshair() end })
+    T.zx:CreateSlider({ Name = "透明度", Range = {0, 1}, Increment = 0.05, CurrentValue = 0, Flag = "ZX_Trans", Callback = function(v) CFG.Transparency = v; UpdateElementColors() end })
+    DrawCrosshair()
+end
+
+-- ==================== 光环 (GH) ====================
+do
+    local AuraDevvFolder = ReplicatedStorage:FindFirstChild("Devv") or ReplicatedStorage:FindFirstChild("devv")
+    if AuraDevvFolder then
+        local AuraDevvModule = require(AuraDevvFolder); local AuraNetwork = AuraDevvModule.load("Network"); local AuraFireServer = AuraNetwork.FireServer
+        local AuraConfig = { Stomp = { Enabled = false, Interval = 0.5, Range = 50 }, Arrest = { Enabled = false, Interval = 0.5, Range = 50 }, Grab = { Enabled = false, Interval = 0.5, Range = 50 }, Revive = { Enabled = false, Interval = 0.5, Range = 50 } }
+        local function getClosestAuraTarget(range, skipTeam)
+            local myChar = LocalPlayer.Character; if not myChar then return nil end
+            local myHRP = myChar:FindFirstChild("HumanoidRootPart"); if not myHRP then return nil end
+            local closest, minDist = nil, math.huge
+            for _, plr in ipairs(Players:GetPlayers()) do
+                if plr ~= LocalPlayer and plr.Character then
+                    local isTeammate = plr.Team and LocalPlayer.Team and plr.Team == LocalPlayer.Team
+                    if not (skipTeam and isTeammate) then
+                        local hrp = plr.Character:FindFirstChild("HumanoidRootPart"); local hum = plr.Character:FindFirstChildOfClass("Humanoid")
+                        if hrp and hum and hum.Health > 0 then
+                            local dist = (hrp.Position - myHRP.Position).Magnitude
+                            if dist <= range and dist < minDist then minDist = dist; closest = plr end
+                        end
+                    end
+                end
+            end
+            return closest
+        end
+        task.spawn(function() while true do if AuraConfig.Stomp.Enabled then local target = getClosestAuraTarget(AuraConfig.Stomp.Range, true); if target then pcall(function() AuraFireServer("finish", target.UserId) end) end end; task.wait(AuraConfig.Stomp.Interval) end end)
+        task.spawn(function() while true do if AuraConfig.Arrest.Enabled then local target = getClosestAuraTarget(AuraConfig.Arrest.Range, false); if target then pcall(function() AuraFireServer("arrest", target.UserId) end) end end; task.wait(AuraConfig.Arrest.Interval) end end)
+        task.spawn(function() while true do if AuraConfig.Grab.Enabled then local target = getClosestAuraTarget(AuraConfig.Grab.Range, true); if target then pcall(function() AuraFireServer("grab", target.UserId) end) end end; task.wait(AuraConfig.Grab.Interval) end end)
+        task.spawn(function() while true do if AuraConfig.Revive.Enabled then local target = getClosestAuraTarget(AuraConfig.Revive.Range, false); if target then pcall(function() AuraFireServer("revive", target.UserId) end) end end; task.wait(AuraConfig.Revive.Interval) end end)
+        T.gh:CreateToggle({ Name = "启用踩踏", CurrentValue = false, Flag = "GH_Stomp", Callback = function(v) AuraConfig.Stomp.Enabled = v end })
+        T.gh:CreateSlider({ Name = "踩踏间隔", Range = {0.01, 5}, Increment = 0.01, CurrentValue = 0.5, Flag = "GH_StompInt", Callback = function(v) AuraConfig.Stomp.Interval = v end })
+        T.gh:CreateToggle({ Name = "启用逮捕", CurrentValue = false, Flag = "GH_Arrest", Callback = function(v) AuraConfig.Arrest.Enabled = v end })
+        T.gh:CreateSlider({ Name = "逮捕间隔", Range = {0.01, 5}, Increment = 0.01, CurrentValue = 0.5, Flag = "GH_ArrestInt", Callback = function(v) AuraConfig.Arrest.Interval = v end })
+        T.gh:CreateToggle({ Name = "启用抓取光环", CurrentValue = false, Flag = "GH_Grab", Callback = function(v) AuraConfig.Grab.Enabled = v end })
+        T.gh:CreateSlider({ Name = "抓取间隔", Range = {0.01, 5}, Increment = 0.01, CurrentValue = 0.5, Flag = "GH_GrabInt", Callback = function(v) AuraConfig.Grab.Interval = v end })
+        T.gh:CreateToggle({ Name = "启用救援", CurrentValue = false, Flag = "GH_Revive", Callback = function(v) AuraConfig.Revive.Enabled = v end })
+        T.gh:CreateSlider({ Name = "救援间隔", Range = {0.01, 5}, Increment = 0.01, CurrentValue = 0.5, Flag = "GH_ReviveInt", Callback = function(v) AuraConfig.Revive.Interval = v end })
+    end
+end
+
+-- ==================== 进阶辅助瞄准 (FZ) ====================
+do
+    local ClientSettings, SettingsData, AimAssistModule
+    local modulesOk = pcall(function()
+        local DevvFolder = ReplicatedStorage:FindFirstChild("Devv") or ReplicatedStorage:FindFirstChild("devv")
+        if not DevvFolder then error("Devv 不存在") end
+        local DevvModule = require(DevvFolder); local load = DevvModule.load
+        ClientSettings = load("ClientSettings"); SettingsData = require(ReplicatedStorage.Shared.Wanted.Indicies.SettingsData); AimAssistModule = require(ReplicatedStorage.Client.Wanted.Objects.ClientTool.Components.Tools.Guns.AimAssist)
+    end)
+    if not modulesOk then
+        Airflow:Notify({ Title = "辅助瞄准", Content = "未检测到 Wanted 模块", Type = "Error", Duration = 5 })
+    else
+        local AA = { Enabled = false, Part = "Body", SpeedX = 2.7, SpeedY = 1, PredictionX = 2.8, PredictionY = 2.6, IgnoreTeammate = true, CampFilter = "全部", WallCheck = true, ShowFOV = false, FOVRadius = 250, FOVFixed = true, FOVColor = Color3.fromRGB(190, 120, 255), FOVThickness = 1.5, FOVTransparency = 0.3, FOVSides = 64 }
+        local originalAimStep = AimAssistModule.Step
+        local function setAssistSensitivity(v) pcall(function() local setting = SettingsData.settingDataByName and SettingsData.settingDataByName.assistSensitivity; if type(setting) == "table" then setting.defaultValue = v end; if type(ClientSettings.Set) == "function" then ClientSettings.Set("assistSensitivity", v) end end) end
+        local function getViewportCenter(cam) if UserInputService.TouchEnabled then return cam.ViewportSize.X * 0.5, cam.ViewportSize.Y * 0.5 end; local m = UserInputService:GetMouseLocation(); return m.X, m.Y end
+        local function getCamp(plr) if not plr then return nil end; local team = plr:GetAttribute("currentTeam"); if type(team) == "string" then return team end; if plr.Team then return plr.Team.Name end; return nil end
+        local function isTeammate(plr) if plr == LocalPlayer then return true end; local myCamp = getCamp(LocalPlayer); local pCamp = getCamp(plr); if myCamp == nil or pCamp == nil then return plr.Team ~= nil and plr.Team == LocalPlayer.Team end; return myCamp == pCamp end
+        local rayParams = RaycastParams.new(); rayParams.FilterType = Enum.RaycastFilterType.Exclude; rayParams.IgnoreWater = true
+        local function checkWall(targetPart)
+            if not targetPart or not targetPart.Parent then return true end; local char = LocalPlayer.Character; if not char then return true end
+            local origin = Camera.CFrame.Position; local targetPos = targetPart.Position; local dir = targetPos - origin; local dist = dir.Magnitude; if dist < 0.1 then return false end
+            rayParams.FilterDescendantsInstances = { char, Camera }; local result = workspace:Raycast(origin, dir, rayParams)
+            if not result then return false end
+            if result.Instance and result.Instance:IsDescendantOf(targetPart.Parent) then return false end
+            if (result.Position - targetPos).Magnitude <= 0.6 then return false end
+            return true
+        end
+        local function isAllowedTarget(plr)
+            if AA.CampFilter ~= "全部" then local camp = getCamp(plr); if AA.CampFilter == "仅警察" and camp ~= "police" then return false end; if AA.CampFilter == "仅帮派" and camp ~= "syndicate" then return false end; if AA.CampFilter == "仅平民" and camp ~= "civilian" then return false end; return true
+            else if AA.IgnoreTeammate and isTeammate(plr) then return false end; return true end
+        end
+        local fovCircle = Drawing.new("Circle"); fovCircle.Visible = false; fovCircle.Filled = false; fovCircle.NumSides = AA.FOVSides; fovCircle.Radius = AA.FOVRadius; fovCircle.Thickness = AA.FOVThickness; fovCircle.Transparency = AA.FOVTransparency; fovCircle.Color = AA.FOVColor; fovCircle.Position = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+        local function updateFOVCircle()
+            if not fovCircle then return end
+            fovCircle.Visible = AA.ShowFOV and AA.Enabled; fovCircle.Radius = AA.FOVRadius; fovCircle.Thickness = AA.FOVThickness; fovCircle.Transparency = AA.FOVTransparency; fovCircle.Color = AA.FOVColor; fovCircle.NumSides = AA.FOVSides
+            if AA.ShowFOV and AA.Enabled then if AA.FOVFixed then fovCircle.Position = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2) else local m = UserInputService:GetMouseLocation(); fovCircle.Position = Vector2.new(m.X, m.Y) end end
+        end
+        RunService.RenderStepped:Connect(function() pcall(updateFOVCircle) end)
+        local function aimStep(self, dt)
+            local tool = self and self.tool; local ts = tool and tool.toolState
+            if not ts or (ts.ammo or 0) <= 0 then return originalAimStep(self, dt) end
+            local char = LocalPlayer.Character; local hrp = char and char:FindFirstChild("HumanoidRootPart"); local cam = workspace.CurrentCamera
+            if not char or not hrp or not cam then return originalAimStep(self, dt) end
+            local cFrame = cam.CFrame; local sx, sy = getViewportCenter(cam); local bestScore, bestYaw, bestPitch = math.huge, nil, nil
+            for _, plr in ipairs(Players:GetPlayers()) do
+                if plr ~= LocalPlayer and isAllowedTarget(plr) then
+                    local pchar = plr.Character; local phum = pchar and pchar:FindFirstChildOfClass("Humanoid"); local phrp = pchar and pchar:FindFirstChild("HumanoidRootPart"); local phead = pchar and pchar:FindFirstChild("Head")
+                    if pchar and phum and phum.Health > 0 and phrp then
+                        local target = (AA.Part == "Head") and (phead or phrp) or (pchar:FindFirstChild("UpperTorso") or pchar:FindFirstChild("Torso") or phrp)
+                        local blocked = AA.WallCheck and checkWall(target) or false
+                        if not blocked then
+                            local predict = target.Position + (target.AssemblyLinearVelocity or Vector3.zero) * (AA.PredictionX * 0.01)
+                            local rel = cFrame:PointToObjectSpace(predict); local mag = rel.Magnitude
+                            if mag > 0.35 then
+                                local inv = 1 / mag; local fwd = -rel.Z * inv
+                                if fwd > 0.02 then
+                                    local sp = cam:WorldToViewportPoint(predict); local dx, dy = sp.X - sx, sp.Y - sy; local pixDist = math.sqrt(dx * dx + dy * dy)
+                                    if pixDist <= AA.FOVRadius then
+                                        local score = pixDist * pixDist
+                                        if score < bestScore then local yaw = math.atan2(rel.X * inv, fwd); local pitch = math.atan2(rel.Y * inv, fwd); bestYaw, bestPitch = math.deg(yaw), math.deg(pitch); bestScore = score end
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+            if bestYaw then
+                local mod = 1; if tool and tool.GetData then local ok, data = pcall(tool.GetData, tool); if ok and data and data.aimAssistMod then mod = data.aimAssistMod end end
+                local spX = AA.SpeedX * mod * dt * 10; local spY = AA.SpeedY * mod * dt * 10
+                local curX = LocalPlayer:GetAttribute("xAngle") or 0; local curY = LocalPlayer:GetAttribute("yAngle") or 0
+                LocalPlayer:SetAttribute("xAngle", (curX - bestYaw * spX) % 360); LocalPlayer:SetAttribute("yAngle", math.clamp(curY + bestPitch * spY, -80, 80))
+            end
+        end
+        T.fz:CreateToggle({ Name = "启用辅助瞄准", CurrentValue = false, Flag = "FZ_Enable", Callback = function(v) AA.Enabled = v; if v then AimAssistModule.Step = aimStep; Airflow:Notify({ Title = "辅助瞄准", Content = "已开启", Type = "Success", Duration = 2 }) else AimAssistModule.Step = originalAimStep; Airflow:Notify({ Title = "辅助瞄准", Content = "已关闭", Type = "Info", Duration = 2 }) end; updateFOVCircle() end })
+        T.fz:CreateDropdown({ Name = "瞄准部位", Options = {"Head", "Body"}, CurrentOption = "Body", Flag = "FZ_Part", Callback = function(v) AA.Part = v end })
+        T.fz:CreateSlider({ Name = "水平速度", Range = {0.1, 5}, Increment = 0.1, CurrentValue = 2.7, Flag = "FZ_SpeedX", Callback = function(v) AA.SpeedX = v; setAssistSensitivity(v) end })
+        T.fz:CreateSlider({ Name = "垂直速度", Range = {0.1, 5}, Increment = 0.1, CurrentValue = 1, Flag = "FZ_SpeedY", Callback = function(v) AA.SpeedY = v end })
+        T.fz:CreateSlider({ Name = "水平预判", Range = {0, 7}, Increment = 0.01, CurrentValue = 2.8, Flag = "FZ_PredX", Callback = function(v) AA.PredictionX = v end })
+        T.fz:CreateSlider({ Name = "垂直预判", Range = {0, 7}, Increment = 0.01, CurrentValue = 2.6, Flag = "FZ_PredY", Callback = function(v) AA.PredictionY = v end })
+        T.fz:CreateToggle({ Name = "显示 FOV 圈", CurrentValue = false, Flag = "FZ_ShowFOV", Callback = function(v) AA.ShowFOV = v; updateFOVCircle() end })
+        T.fz:CreateToggle({ Name = "固定在屏幕中心", CurrentValue = true, Flag = "FZ_FOVFixed", Callback = function(v) AA.FOVFixed = v; updateFOVCircle() end })
+        T.fz:CreateSlider({ Name = "FOV 圈半径", Range = {20, 1000}, Increment = 5, CurrentValue = 250, Flag = "FZ_FOVRadius", Callback = function(v) AA.FOVRadius = v; updateFOVCircle() end })
+        T.fz:CreateSlider({ Name = "线条粗细", Range = {1, 8}, Increment = 1, CurrentValue = 2, Flag = "FZ_FOVThick", Callback = function(v) AA.FOVThickness = v; updateFOVCircle() end })
+        T.fz:CreateSlider({ Name = "透明度", Range = {0, 1}, Increment = 0.05, CurrentValue = 0.3, Flag = "FZ_FOVTrans", Callback = function(v) AA.FOVTransparency = v; updateFOVCircle() end })
+        T.fz:CreateDropdown({ Name = "圈颜色", Options = { "紫色", "红色", "绿色", "蓝色", "白色", "黄色" }, CurrentOption = "紫色", Flag = "FZ_FOVColor", Callback = function(v) local map = { ["紫色"] = Color3.fromRGB(190, 120, 255), ["红色"] = Color3.fromRGB(255, 80, 80), ["绿色"] = Color3.fromRGB(80, 255, 120), ["蓝色"] = Color3.fromRGB(80, 160, 255), ["白色"] = Color3.fromRGB(255, 255, 255), ["黄色"] = Color3.fromRGB(255, 220, 80) }; AA.FOVColor = map[v] or map["紫色"]; updateFOVCircle() end })
+        T.fz:CreateDropdown({ Name = "圆的边数", Options = { "32", "48", "64", "96", "128" }, CurrentOption = "64", Flag = "FZ_FOVSides", Callback = function(v) AA.FOVSides = tonumber(v) or 64; updateFOVCircle() end })
+        T.fz:CreateToggle({ Name = "忽略队友(全部阵营时生效)", CurrentValue = true, Flag = "FZ_IgnoreTeam", Callback = function(v) AA.IgnoreTeammate = v end })
+        T.fz:CreateDropdown({ Name = "只吸附指定阵营", Options = {"全部", "仅警察", "仅帮派", "仅平民"}, CurrentOption = "全部", Flag = "FZ_CampFilter", Callback = function(v) AA.CampFilter = v end })
+        T.fz:CreateToggle({ Name = "启用掩体检测", CurrentValue = true, Flag = "FZ_WallCheck", Callback = function(v) AA.WallCheck = v; Airflow:Notify({ Title = "掩体检测", Content = v and "已开启" or "已关闭", Type = "Info", Duration = 2 }) end })
+    end
+end
+
+-- ==================== 范围 (BOT) ====================
+do
+    local btHbSize = 8; local btHbConn = nil
+    local function btExpandPlayer(player)
+        if player == LocalPlayer then return end; local char = player.Character; if not char then return end
+        local humanoid = char:FindFirstChildOfClass("Humanoid"); if not humanoid or humanoid.Health <= 0 then return end
+        local hrpX = char:FindFirstChild("HumanoidRootPart"); if not hrpX then return end
+        local size = math.clamp(btHbSize, 0, 100)
+        pcall(function() hrpX.Size = Vector3.new(size, size, size); hrpX.Transparency = 0.85; hrpX.Color = Color3.fromRGB(190, 190, 190); hrpX.Material = Enum.Material.Neon; hrpX.CanCollide = false end)
+    end
+    local function btResetPlayer(player)
+        local char = player.Character; if not char then return end; local hrpX = char:FindFirstChild("HumanoidRootPart"); if not hrpX then return end
+        pcall(function() hrpX.Size = Vector3.new(2, 2, 1); hrpX.Transparency = 0; hrpX.Color = Color3.fromRGB(163, 162, 165); hrpX.Material = Enum.Material.Plastic; hrpX.CanCollide = true end)
+    end
+    T.bot:CreateToggle({
+        Name = "范围 (扩大碰撞箱)", CurrentValue = false, Flag = "BOT_Enable",
+        Callback = function(state)
+            if state then
+                if not btHbConn then btHbConn = RunService.Heartbeat:Connect(function() for i = 1, #Players:GetPlayers() do btExpandPlayer(Players:GetPlayers()[i]) end end) end
+                for i = 1, #Players:GetPlayers() do local player = Players:GetPlayers()[i]; if player ~= LocalPlayer then player.CharacterAdded:Connect(function() task.wait(1) btExpandPlayer(player) end) end end
+            else
+                if btHbConn then btHbConn:Disconnect(); btHbConn = nil end
+                for i = 1, #Players:GetPlayers() do btResetPlayer(Players:GetPlayers()[i]) end
+            end
+        end
+    })
+    T.bot:CreateSlider({ Name = "范围大小", Range = {0, 100}, Increment = 1, CurrentValue = 8, Flag = "BOT_Size", Callback = function(value) btHbSize = value end })
+end
+
+-- ==================== 子弹追踪 / 静默瞄准 (ZJ) ====================
+do
+    _G.WL = _G.WL or {}
+    local SilentAimSettings = { Enabled = false, TeamCheck = false, VisibleCheck = false, TargetPart = "HumanoidRootPart", FOVRadius = 130, FOVVisible = false, ShowSilentAimTarget = false, HitChance = 100, FixedFOV = true, TargetIndicatorRadius = 20, MaxDistance = 500, PriorityMode = "准星最近", Wallbang = false, ShowTracer = false, TracerFromBottom = true, TracerThickness = 1, TracerTransparency = 0.3 }
+    local sa_currentTargetPart = nil; local sa_lastTargetCharacter = nil
+    local sa_target_circle = Drawing.new("Circle"); sa_target_circle.Visible = false; sa_target_circle.Thickness = 2; sa_target_circle.Filled = false; sa_target_circle.Color = Color3.fromRGB(255, 0, 0)
+    local sa_tracer = Drawing.new("Line"); sa_tracer.Visible = false; sa_tracer.Thickness = 1; sa_tracer.Transparency = 0.3; sa_tracer.Color = Color3.fromRGB(255, 0, 0); sa_tracer.ZIndex = 999
+    local sa_FOVGui = Instance.new("ScreenGui", LocalPlayer:WaitForChild("PlayerGui")); sa_FOVGui.Name = "SA_FOVGui"; sa_FOVGui.ResetOnSpawn = false; sa_FOVGui.IgnoreGuiInset = true; sa_FOVGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling; sa_FOVGui.Enabled = false
+    local sa_FOVFrame = Instance.new("Frame", sa_FOVGui); sa_FOVFrame.AnchorPoint = Vector2.new(0.5, 0.5); sa_FOVFrame.Position = UDim2.fromScale(0.5, 0.5); sa_FOVFrame.BackgroundTransparency = 1; sa_FOVFrame.Size = UDim2.fromOffset(260, 260)
+    local sa_FOVStroke = Instance.new("UIStroke", sa_FOVFrame); sa_FOVStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border; sa_FOVStroke.Thickness = 1; sa_FOVStroke.Transparency = 0.5; sa_FOVStroke.Color = Color3.fromRGB(255, 0, 0)
+    local sa_FOVCorner = Instance.new("UICorner", sa_FOVFrame); sa_FOVCorner.CornerRadius = UDim.new(1, 0)
+    local function SA_getScreenPos(v) local p, on = Camera:WorldToViewportPoint(v); return Vector2.new(p.X, p.Y), on end
+    local function SA_isVisible(part, origin)
+        if not part then return false end; local char = LocalPlayer.Character; if not char then return false end
+        local o = origin or Camera.CFrame.Position; local dir = part.Position - o
+        local rp = RaycastParams.new(); rp.FilterType = Enum.RaycastFilterType.Exclude; rp.FilterDescendantsInstances = {char, part.Parent}
+        return not workspace:Raycast(o, dir.Unit * dir.Magnitude, rp)
+    end
+    local function SA_getClosestPlayer()
+        local myChar = LocalPlayer.Character; if not myChar or not myChar:FindFirstChild("HumanoidRootPart") then return nil end
+        local myRoot = myChar.HumanoidRootPart; local aimPoint = SilentAimSettings.FixedFOV and (Camera.ViewportSize / 2) or UserInputService:GetMouseLocation(); local list = {}
+        for _, p in ipairs(Players:GetPlayers()) do
+            if p ~= LocalPlayer and not (_G.WL and _G.WL[p.Name]) and not (SilentAimSettings.TeamCheck and p.Team == LocalPlayer.Team) then
+                local c = p.Character; local h = c and c:FindFirstChildOfClass("Humanoid")
+                if c and h and h.Health > 0 then
+                    local part = c:FindFirstChild(SilentAimSettings.TargetPart) or c:FindFirstChild("HumanoidRootPart")
+                    if part and not (SilentAimSettings.VisibleCheck and not SA_isVisible(part, myChar.Head.Position)) then
+                        local dist = (myRoot.Position - part.Position).Magnitude
+                        if dist <= SilentAimSettings.MaxDistance then
+                            local sp, on = SA_getScreenPos(part.Position)
+                            if on then
+                                local fovDist = (aimPoint - sp).Magnitude
+                                if fovDist <= SilentAimSettings.FOVRadius then table.insert(list, {char = c, fov = fovDist, dist = dist, health = h.Health}) end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+        if #list == 0 then return nil end
+        table.sort(list, function(a, b) if SilentAimSettings.PriorityMode == "最低血量" then return a.health < b.health elseif SilentAimSettings.PriorityMode == "距离最近" then return a.dist < b.dist else return a.fov < b.fov end end)
+        return list[1].char
+    end
+
+    T.zj:CreateToggle({ Name = "启用静默瞄准", CurrentValue = false, Flag = "ZJ_Enable", Callback = function(v) SilentAimSettings.Enabled = v end })
+    T.zj:CreateToggle({ Name = "队伍检查", CurrentValue = false, Flag = "ZJ_Team", Callback = function(v) SilentAimSettings.TeamCheck = v end })
+    T.zj:CreateToggle({ Name = "可见性检查", CurrentValue = false, Flag = "ZJ_Vis", Callback = function(v) SilentAimSettings.VisibleCheck = v end })
+    T.zj:CreateToggle({ Name = "穿墙", CurrentValue = false, Flag = "ZJ_Wall", Callback = function(v) SilentAimSettings.Wallbang = v end })
+    T.zj:CreateSlider({ Name = "命中率", Range = {0, 100}, Increment = 1, CurrentValue = 100, Flag = "ZJ_Hit", Callback = function(v) SilentAimSettings.HitChance = v end })
+    T.zj:CreateDropdown({ Name = "目标部位", Options = { "Head", "HumanoidRootPart" }, CurrentOption = "HumanoidRootPart", Flag = "ZJ_Part", Callback = function(v) SilentAimSettings.TargetPart = v end })
+    T.zj:CreateDropdown({ Name = "优先模式", Options = { "准星最近", "距离最近", "最低血量" }, CurrentOption = "准星最近", Flag = "ZJ_Priority", Callback = function(v) SilentAimSettings.PriorityMode = v end })
+    T.zj:CreateSlider({ Name = "最大距离", Range = {10, 2000}, Increment = 10, CurrentValue = 500, Flag = "ZJ_MaxDist", Callback = function(v) SilentAimSettings.MaxDistance = v end })
+    T.zj:CreateToggle({ Name = "显示 FOV 圈", CurrentValue = false, Flag = "ZJ_FOVVis", Callback = function(v) sa_FOVGui.Enabled = v end })
+    T.zj:CreateSlider({ Name = "FOV 圈半径", Range = {10, 1000}, Increment = 10, CurrentValue = 130, Flag = "ZJ_FOVRad", Callback = function(v) sa_FOVFrame.Size = UDim2.fromOffset(v * 2, v * 2); SilentAimSettings.FOVRadius = v end })
+    T.zj:CreateToggle({ Name = "固定 FOV（屏幕中心）", CurrentValue = true, Flag = "ZJ_FOVFix", Callback = function(v) SilentAimSettings.FixedFOV = v end })
+    T.zj:CreateToggle({ Name = "显示目标指示器", CurrentValue = false, Flag = "ZJ_ShowTarget", Callback = function(v) SilentAimSettings.ShowSilentAimTarget = v end })
+    T.zj:CreateSlider({ Name = "指示器大小", Range = {5, 50}, Increment = 1, CurrentValue = 20, Flag = "ZJ_TargetRad", Callback = function(v) SilentAimSettings.TargetIndicatorRadius = v end })
+    T.zj:CreateToggle({ Name = "显示瞄准射线", CurrentValue = false, Flag = "ZJ_ShowTracer", Callback = function(v) SilentAimSettings.ShowTracer = v end })
+    T.zj:CreateToggle({ Name = "从屏幕底部发射", CurrentValue = true, Flag = "ZJ_TracerBottom", Callback = function(v) SilentAimSettings.TracerFromBottom = v end })
+    T.zj:CreateSlider({ Name = "射线粗细", Range = {1, 10}, Increment = 1, CurrentValue = 1, Flag = "ZJ_TracerThick", Callback = function(v) SilentAimSettings.TracerThickness = v; sa_tracer.Thickness = v end })
+    T.zj:CreateSlider({ Name = "射线透明度", Range = {0, 1}, Increment = 0.05, CurrentValue = 0.3, Flag = "ZJ_TracerAlpha", Callback = function(v) SilentAimSettings.TracerTransparency = v; sa_tracer.Transparency = v end })
+
+    local WL_Created = {}
+    local function WL_AddFor(playerName)
+        if WL_Created[playerName] then return end
+        T.zj:CreateToggle({ Name = playerName .. " (白名单不攻击)", CurrentValue = false, Flag = "ZJ_WL_" .. playerName, Callback = function(v) _G.WL = _G.WL or {}; if v then _G.WL[playerName] = true else _G.WL[playerName] = nil end end })
+        WL_Created[playerName] = true
+    end
+    for _, p in ipairs(Players:GetPlayers()) do if p ~= LocalPlayer then WL_AddFor(p.Name) end end
+    Players.PlayerAdded:Connect(function(p) if p ~= LocalPlayer then task.wait(0.3) WL_AddFor(p.Name) end end)
+    T.zj:CreateButton({ Name = "刷新白名单列表", Callback = function() for _, p in ipairs(Players:GetPlayers()) do if p ~= LocalPlayer then WL_AddFor(p.Name) end end Airflow:Notify({ Title = "白名单", Content = "已刷新", Type = "Success", Duration = 2 }) end })
+
+    RunService.RenderStepped:Connect(function()
+        sa_currentTargetPart = nil; local target = nil
+        if SilentAimSettings.Enabled then target = SA_getClosestPlayer() end
+        sa_lastTargetCharacter = target
+        if target then local h = target:FindFirstChildOfClass("Humanoid"); if h and h.Health > 0 then sa_currentTargetPart = target:FindFirstChild(SilentAimSettings.TargetPart) or target:FindFirstChild("HumanoidRootPart") end end
+        if sa_target_circle then
+            sa_target_circle.Visible = false
+            if sa_currentTargetPart and SilentAimSettings.ShowSilentAimTarget then local sp, on = SA_getScreenPos(sa_currentTargetPart.Position); if on then sa_target_circle.Visible = true; sa_target_circle.Position = sp; sa_target_circle.Radius = SilentAimSettings.TargetIndicatorRadius end end
+        end
+        sa_tracer.Visible = false
+        if sa_currentTargetPart and SilentAimSettings.ShowTracer and SilentAimSettings.Enabled then
+            local sp, on = SA_getScreenPos(sa_currentTargetPart.Position)
+            if on then
+                local fromPos = SilentAimSettings.TracerFromBottom and Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y) or Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+                sa_tracer.From = fromPos; sa_tracer.To = sp; sa_tracer.Thickness = SilentAimSettings.TracerThickness; sa_tracer.Transparency = SilentAimSettings.TracerTransparency; sa_tracer.Visible = true
+            end
+        end
+        if sa_FOVGui.Enabled then if SilentAimSettings.FixedFOV then sa_FOVFrame.Position = UDim2.fromScale(0.5, 0.5) else local m = UserInputService:GetMouseLocation(); sa_FOVFrame.Position = UDim2.fromOffset(m.X, m.Y) end end
+    end)
+
+    local sa_oldNamecall
+    sa_oldNamecall = hookmetamethod(game, "__namecall", newcclosure(function(...)
+        local Method = getnamecallmethod(); local Args = {...}; local self = Args[1]
+        if SilentAimSettings.Enabled and not checkcaller() and sa_currentTargetPart then
+            if math.random() <= SilentAimSettings.HitChance / 100 then
+                if Method == "Raycast" then
+                    if #Args >= 3 and typeof(Args[2]) == "Vector3" and typeof(Args[3]) == "Vector3" then
+                        local origin = Args[2]; local direction = Args[3]
+                        if direction.Magnitude < 100 then return sa_oldNamecall(...) end
+                        Args[3] = (sa_currentTargetPart.Position - origin).Unit * 1000
+                        return sa_oldNamecall(unpack(Args))
+                    end
+                end
+            end
+        end
+        return sa_oldNamecall(...)
+    end))
+end
+
+-- ==================== ESP ====================
+do
+    local CFG = { Enabled = false, MaxDistance = 2000, ShowBox = false, ShowName = false, ShowHealth = false, BoxThickness = 1, ShowTracer = false, TracerOrigin = "bottom", TracerThickness = 1, TracerTransparency = 0.35, W_ShowRank = false, W_ShowWanted = false, W_ShowCash = false, W_ShowStates = false, Color_Police = Color3.fromRGB(80, 180, 255), Color_Syndicate = Color3.fromRGB(255, 80, 80), Color_Neutral = Color3.fromRGB(200, 200, 200), Color_Wanted = Color3.fromRGB(255, 60, 60) }
+    local function fmtMoney(n) if type(n) ~= "number" then return "?" end; if n >= 1e6 then return string.format("%.2fM", n / 1e6) end; if n >= 1e3 then return string.format("%.1fK", n / 1e3) end; return tostring(math.floor(n)) end
+    local function getTeam(plr) if not plr then return "civilian", nil end; local team = plr:GetAttribute("currentTeam"); if team == "police" then return "police", plr:GetAttribute("policeRank") end; if team == "syndicate" then return "syndicate", plr:GetAttribute("syndicateRank") end; return "civilian", nil end
+    local function getColor(plr) if not plr then return CFG.Color_Neutral end; local wanted = plr:GetAttribute("wantedLevel") or 0; if wanted > 0 then return CFG.Color_Wanted end; local team = plr:GetAttribute("currentTeam"); if team == "police" then return CFG.Color_Police end; if team == "syndicate" then return CFG.Color_Syndicate end; return CFG.Color_Neutral end
+    local gui = Instance.new("ScreenGui"); gui.Name = "FullESP_" .. tostring(math.random(1000, 9999)); gui.ResetOnSpawn = false; gui.IgnoreGuiInset = true; gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling; gui.DisplayOrder = 9998
+    local ok = pcall(function() gui.Parent = game:GetService("CoreGui") end); if not ok or not gui.Parent then gui.Parent = LocalPlayer:WaitForChild("PlayerGui") end
+    local ESP = {}
+    local function createESP()
+        local o = {}
+        local tracer = Drawing.new("Line"); tracer.Thickness = 1; tracer.Transparency = 0.35; tracer.Color = Color3.new(1, 1, 1); tracer.Visible = false; o.tracer = tracer
+        local box = Instance.new("Frame"); box.BackgroundTransparency = 1; box.BorderSizePixel = 0; box.ClipsDescendants = false; box.Visible = false; box.ZIndex = 2; box.Parent = gui; o.box = box
+        local stroke = Instance.new("UIStroke"); stroke.Thickness = CFG.BoxThickness; stroke.Color = Color3.new(1, 1, 1); stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border; stroke.Parent = box; o.stroke = stroke
+        local hpBack = Instance.new("Frame"); hpBack.AnchorPoint = Vector2.new(1, 0); hpBack.Position = UDim2.new(0, -1, 0, 0); hpBack.Size = UDim2.new(0, 3, 1, 0); hpBack.BackgroundColor3 = Color3.fromRGB(15, 15, 15); hpBack.BackgroundTransparency = 0.15; hpBack.BorderSizePixel = 0; hpBack.Parent = box; o.hpBack = hpBack
+        local hpFill = Instance.new("Frame"); hpFill.AnchorPoint = Vector2.new(0, 1); hpFill.Position = UDim2.new(0, 0, 1, 0); hpFill.Size = UDim2.new(1, 0, 1, 0); hpFill.BackgroundColor3 = Color3.fromRGB(80, 255, 80); hpFill.BorderSizePixel = 0; hpFill.Parent = hpBack; o.hpFill = hpFill
+        local name = Instance.new("TextLabel"); name.AnchorPoint = Vector2.new(0.5, 1); name.Position = UDim2.new(0.5, 0, 0, -2); name.Size = UDim2.new(1, 20, 0, 14); name.BackgroundTransparency = 1; name.Font = Enum.Font.GothamBold; name.TextSize = 12; name.TextColor3 = Color3.new(1, 1, 1); name.TextStrokeTransparency = 0; name.TextStrokeColor3 = Color3.new(0, 0, 0); name.TextXAlignment = Enum.TextXAlignment.Center; name.Parent = box; o.name = name
+        local line1 = Instance.new("TextLabel"); line1.AnchorPoint = Vector2.new(0.5, 0); line1.Position = UDim2.new(0.5, 0, 1, 2); line1.Size = UDim2.new(2, 0, 0, 13); line1.BackgroundTransparency = 1; line1.Font = Enum.Font.GothamBold; line1.TextSize = 11; line1.TextColor3 = Color3.fromRGB(255, 220, 100); line1.TextStrokeTransparency = 0; line1.TextStrokeColor3 = Color3.new(0, 0, 0); line1.TextXAlignment = Enum.TextXAlignment.Center; line1.Parent = box; o.line1 = line1
+        local line2 = Instance.new("TextLabel"); line2.AnchorPoint = Vector2.new(0.5, 0); line2.Position = UDim2.new(0.5, 0, 1, 16); line2.Size = UDim2.new(2, 0, 0, 12); line2.BackgroundTransparency = 1; line2.Font = Enum.Font.GothamMedium; line2.TextSize = 10; line2.TextColor3 = Color3.fromRGB(200, 200, 200); line2.TextStrokeTransparency = 0; line2.TextStrokeColor3 = Color3.new(0, 0, 0); line2.TextXAlignment = Enum.TextXAlignment.Center; line2.Parent = box; o.line2 = line2
+        local line3 = Instance.new("TextLabel"); line3.AnchorPoint = Vector2.new(0.5, 0); line3.Position = UDim2.new(0.5, 0, 1, 28); line3.Size = UDim2.new(2, 0, 0, 12); line3.BackgroundTransparency = 1; line3.Font = Enum.Font.GothamMedium; line3.TextSize = 10; line3.TextColor3 = Color3.fromRGB(150, 220, 255); line3.TextStrokeTransparency = 0; line3.TextStrokeColor3 = Color3.new(0, 0, 0); line3.TextXAlignment = Enum.TextXAlignment.Center; line3.Parent = box; o.line3 = line3
+        return o
+    end
+    local function destroyESP(o) if not o then return end; if o.box and o.box.Parent then pcall(function() o.box:Destroy() end) end; if o.tracer then pcall(function() o.tracer:Remove() end) end end
+    local function hideESP(o) o.box.Visible = false; if o.tracer then o.tracer.Visible = false end end
+    RunService.RenderStepped:Connect(function()
+        local list = {}
+        for _, plr in ipairs(Players:GetPlayers()) do if plr ~= LocalPlayer and plr.Character then table.insert(list, { char = plr.Character, plr = plr }) end end
+        local seen = {}; for _, item in ipairs(list) do seen[item.char] = true end
+        for char, o in pairs(ESP) do if not seen[char] or not char.Parent then destroyESP(o); ESP[char] = nil end end
+        if not CFG.Enabled then for _, o in pairs(ESP) do hideESP(o) end return end
+        local myChar = LocalPlayer.Character; local myHrp = myChar and myChar:FindFirstChild("HumanoidRootPart"); local viewport = Camera.ViewportSize
+        for _, item in ipairs(list) do
+            local char = item.char; local plr = item.plr
+            if not ESP[char] then ESP[char] = createESP() end
+            local o = ESP[char]; local hum = char:FindFirstChildOfClass("Humanoid"); local hrp = char:FindFirstChild("HumanoidRootPart"); local head = char:FindFirstChild("Head")
+            if not hum or not hrp or not head or hum.Health <= 0 then hideESP(o); continue end
+            local dist = myHrp and (myHrp.Position - hrp.Position).Magnitude or 9999
+            if dist > CFG.MaxDistance then hideESP(o); continue end
+            local topPos, topOn = Camera:WorldToViewportPoint(head.Position + Vector3.new(0, 0.5, 0)); local botPos, botOn = Camera:WorldToViewportPoint(hrp.Position - Vector3.new(0, 2.8, 0))
+            if not topOn or not botOn then hideESP(o); continue end
+            local height = math.abs(botPos.Y - topPos.Y); if height < 1 then hideESP(o); continue end
+            local width = height * 0.55; local x = topPos.X - width / 2; local y = topPos.Y; local color = getColor(plr)
+            if CFG.ShowTracer then
+                local fromX, fromY; if CFG.TracerOrigin == "top" then fromX, fromY = viewport.X / 2, 0 elseif CFG.TracerOrigin == "bottom" then fromX, fromY = viewport.X / 2, viewport.Y else fromX, fromY = viewport.X / 2, viewport.Y / 2 end
+                o.tracer.From = Vector2.new(fromX, fromY); o.tracer.To = Vector2.new(topPos.X, topPos.Y); o.tracer.Color = color; o.tracer.Thickness = CFG.TracerThickness; o.tracer.Transparency = CFG.TracerTransparency; o.tracer.Visible = true
+            else o.tracer.Visible = false end
+            o.box.Position = UDim2.fromOffset(x, y); o.box.Size = UDim2.fromOffset(width, height); o.box.Visible = CFG.ShowBox; o.stroke.Color = color; o.stroke.Thickness = CFG.BoxThickness; o.stroke.Transparency = CFG.ShowBox and 0 or 1
+            if CFG.ShowHealth then
+                local ratio = math.clamp(hum.Health / math.max(1, hum.MaxHealth), 0, 1); o.hpBack.Visible = true; o.hpFill.Size = UDim2.new(1, 0, ratio, 0)
+                if ratio > 0.6 then o.hpFill.BackgroundColor3 = Color3.fromRGB(80, 255, 80) elseif ratio > 0.3 then o.hpFill.BackgroundColor3 = Color3.fromRGB(255, 200, 60) else o.hpFill.BackgroundColor3 = Color3.fromRGB(255, 60, 60) end
+            else o.hpBack.Visible = false end
+            if CFG.ShowName then o.name.Text = plr.DisplayName; o.name.TextColor3 = color; o.name.Visible = true else o.name.Visible = false end
+            local row1 = {}; local team, rank = getTeam(plr)
+            if CFG.W_ShowRank then if team == "police" then table.insert(row1, rank and ("警察·" .. rank) or "警察") elseif team == "syndicate" then table.insert(row1, rank and ("帮派·" .. rank) or "帮派") else table.insert(row1, "平民") end end
+            if CFG.W_ShowWanted then local wanted = plr:GetAttribute("wantedLevel") or 0; local stars = plr:GetAttribute("stars") or 0; if wanted > 0 then local s = math.floor(stars); local starStr = s > 0 and (" " .. string.rep("★", math.min(s, 5))) or ""; table.insert(row1, "通缉" .. math.floor(wanted) .. starStr) end end
+            o.line1.Text = table.concat(row1, "  ·  "); o.line1.TextColor3 = color; o.line1.Visible = CFG.W_ShowRank or CFG.W_ShowWanted
+            local row2 = {}; if CFG.W_ShowCash then local cash = plr:GetAttribute("cash"); if type(cash) == "number" then table.insert(row2, "$" .. fmtMoney(cash)) end end
+            table.insert(row2, string.format("%dm", math.floor(dist))); o.line2.Text = table.concat(row2, "  ·  "); o.line2.Visible = CFG.W_ShowCash
+            local row3 = {}
+            if CFG.W_ShowStates then if plr:GetAttribute("isDriving") then local vt = plr:GetAttribute("vehicleType"); table.insert(row3, "驾驶·" .. (vt or "车")) end; if plr:GetAttribute("aiming") then table.insert(row3, "瞄准") end; if plr:GetAttribute("isTyping") then table.insert(row3, "打字") end; if plr:GetAttribute("hasLootBag") then table.insert(row3, "带赃物") end end
+            if #row3 > 0 then o.line3.Text = table.concat(row3, "  ·  "); o.line3.Visible = true else o.line3.Visible = false end
+        end
+    end)
+    T.ESP:CreateToggle({ Name = "启用 ESP", CurrentValue = false, Flag = "ESP_Enable", Callback = function(v) CFG.Enabled = v end })
+    T.ESP:CreateSlider({ Name = "最大显示距离", Range = {100, 5000}, Increment = 50, CurrentValue = 2000, Flag = "ESP_MaxDist", Callback = function(v) CFG.MaxDistance = v end })
+    T.ESP:CreateToggle({ Name = "方框", CurrentValue = false, Flag = "ESP_Box", Callback = function(v) CFG.ShowBox = v end })
+    T.ESP:CreateToggle({ Name = "名字", CurrentValue = false, Flag = "ESP_Name", Callback = function(v) CFG.ShowName = v end })
+    T.ESP:CreateToggle({ Name = "血量条", CurrentValue = false, Flag = "ESP_Health", Callback = function(v) CFG.ShowHealth = v end })
+    T.ESP:CreateSlider({ Name = "方框线条粗细", Range = {1, 4}, Increment = 1, CurrentValue = 1, Flag = "ESP_BoxThick", Callback = function(v) CFG.BoxThickness = v; for _, o in pairs(ESP) do o.stroke.Thickness = v end end })
+    T.ESP:CreateToggle({ Name = "显示射线", CurrentValue = false, Flag = "ESP_Tracer", Callback = function(v) CFG.ShowTracer = v end })
+    T.ESP:CreateDropdown({ Name = "射线起点", Options = { "屏幕底部", "屏幕中心", "屏幕顶部" }, CurrentOption = "屏幕底部", Flag = "ESP_TracerOrigin", Callback = function(v) if v == "屏幕底部" then CFG.TracerOrigin = "bottom" elseif v == "屏幕中心" then CFG.TracerOrigin = "center" else CFG.TracerOrigin = "top" end end })
+    T.ESP:CreateSlider({ Name = "射线粗细", Range = {1, 5}, Increment = 1, CurrentValue = 1, Flag = "ESP_TracerThick", Callback = function(v) CFG.TracerThickness = v end })
+    T.ESP:CreateSlider({ Name = "射线透明度", Range = {0, 1}, Increment = 0.05, CurrentValue = 0.35, Flag = "ESP_TracerAlpha", Callback = function(v) CFG.TracerTransparency = v end })
+    T.ESP:CreateToggle({ Name = "显示阵营·等级", CurrentValue = false, Flag = "ESP_WRank", Callback = function(v) CFG.W_ShowRank = v end })
+    T.ESP:CreateToggle({ Name = "显示通缉星数", CurrentValue = false, Flag = "ESP_WWanted", Callback = function(v) CFG.W_ShowWanted = v end })
+    T.ESP:CreateToggle({ Name = "显示金钱 $", CurrentValue = false, Flag = "ESP_WCash", Callback = function(v) CFG.W_ShowCash = v end })
+    T.ESP:CreateToggle({ Name = "显示状态", CurrentValue = false, Flag = "ESP_WStates", Callback = function(v) CFG.W_ShowStates = v end })
+    Players.PlayerRemoving:Connect(function(plr) if plr.Character and ESP[plr.Character] then destroyESP(ESP[plr.Character]); ESP[plr.Character] = nil end end)
+end
+
+-- 启动通知
+Airflow:Notify({
+    Title = "加载完成",
+    Content = "港猫的通缉Wanted 已加载！",
+    Icon = "check",
+    Type = "Success",
+    Duration = 5,
+})
