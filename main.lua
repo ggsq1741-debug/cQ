@@ -14391,7 +14391,38 @@ aw.UIElements.Main.Visible=true
 aw.UIElements.Main:WaitForChild"Main".Visible=true
 
 av.WindUI:ToggleAcrylic(true)
-
+if not aw._FollowDecor then
+    local _Root = av.WindUI.ScreenGui
+    local _holder = ao("Frame", {
+        Name = "FollowDecor", BackgroundTransparency = 1, Size = UDim2.fromOffset(0, 0), ZIndex = 0, Parent = _Root
+    })
+    local _img = ao("ImageLabel", {
+        BackgroundTransparency = 1, Image = "rbxassetid://74853190005712", Size = UDim2.fromOffset(220, 220), ScaleType = "Fit", AnchorPoint = Vector2.new(1, 1), ZIndex = 0, Parent = _holder
+    })
+    local _Main = aw.UIElements.Main
+    local _offX, _offY = 30, 0
+    
+    local function _sync()
+        local _m = _Main:FindFirstChild("Main")
+        if not _Main.Visible or not _m or not _m.Visible then
+            _holder.Visible = false
+            return
+        end
+        _holder.Visible = true
+        local _p, _s = _Main.AbsolutePosition, _Main.AbsoluteSize
+        _holder.Position = UDim2.fromOffset(_p.X + _s.X + _offX, _p.Y + _offY)
+    end
+    
+    an.AddSignal(_Main:GetPropertyChangedSignal("AbsolutePosition"), _sync)
+    an.AddSignal(_Main:GetPropertyChangedSignal("AbsoluteSize"), _sync)
+    an.AddSignal(_Main:GetPropertyChangedSignal("Visible"), _sync)
+    task.spawn(function()
+        local _m = _Main:WaitForChild("Main", 5)
+        if _m then an.AddSignal(_m:GetPropertyChangedSignal("Visible"), _sync) end
+        _sync()
+    end)
+    aw._FollowDecor = { Holder = _holder, Image = _img }
+end
 end)
 end
 function aw.Close(C)
