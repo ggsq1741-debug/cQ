@@ -14386,43 +14386,33 @@ end
 aw.CanDropdown=true
 aw.UIElements.Main.Visible=true
 
-
-
+aw.UIElements.Main.Visible=true
 aw.UIElements.Main:WaitForChild"Main".Visible=true
-
 av.WindUI:ToggleAcrylic(true)
-if not aw._FollowDecor then
-    local _Root = av.WindUI.ScreenGui
-    local _holder = ao("Frame", {
-        Name = "FollowDecor", BackgroundTransparency = 1, Size = UDim2.fromOffset(0, 0), ZIndex = 0, Parent = _Root
+
+-- === 开始插入源码级跟随图 ===
+if not aw.FollowImage then
+    local holder = ao("Frame", {
+        Name = "FollowImageHolder",
+        BackgroundTransparency = 1,
+        Size = UDim2.fromOffset(0, 0),
+        ZIndex = 999, -- 保证在最上层
+        Parent = aw.UIElements.Main -- 直接挂在主窗口框架上
     })
-    local _img = ao("ImageLabel", {
-        BackgroundTransparency = 1, Image = "rbxassetid://74853190005712", Size = UDim2.fromOffset(220, 220), ScaleType = "Fit", AnchorPoint = Vector2.new(1, 1), ZIndex = 0, Parent = _holder
+    -- 图片本体
+    aw.FollowImage = ao("ImageLabel", {
+        BackgroundTransparency = 1,
+        Image = "rbxassetid://74853190005712", -- 换成你真实的ID，如果是网址必须换ID
+        Size = UDim2.fromOffset(250, 250),     -- 图片大小
+        ScaleType = "Fit",
+        AnchorPoint = Vector2.new(1, 0),       -- 锚点定在右上
+        Position = UDim2.new(0, -20, 0, 0),    -- 贴在最左边外侧，如果要在右边改 (1, 20, 0, 0)
+        ZIndex = 999,
+        Parent = holder
     })
-    local _Main = aw.UIElements.Main
-    local _offX, _offY = 30, 0
-    
-    local function _sync()
-        local _m = _Main:FindFirstChild("Main")
-        if not _Main.Visible or not _m or not _m.Visible then
-            _holder.Visible = false
-            return
-        end
-        _holder.Visible = true
-        local _p, _s = _Main.AbsolutePosition, _Main.AbsoluteSize
-        _holder.Position = UDim2.fromOffset(_p.X + _s.X + _offX, _p.Y + _offY)
-    end
-    
-    an.AddSignal(_Main:GetPropertyChangedSignal("AbsolutePosition"), _sync)
-    an.AddSignal(_Main:GetPropertyChangedSignal("AbsoluteSize"), _sync)
-    an.AddSignal(_Main:GetPropertyChangedSignal("Visible"), _sync)
-    task.spawn(function()
-        local _m = _Main:WaitForChild("Main", 5)
-        if _m then an.AddSignal(_m:GetPropertyChangedSignal("Visible"), _sync) end
-        _sync()
-    end)
-    aw._FollowDecor = { Holder = _holder, Image = _img }
 end
+-- === 插入结束 ===
+
 end)
 end
 function aw.Close(C)
@@ -14446,6 +14436,11 @@ end
 
 aw.CanDropdown=false
 aw.Closed=true
+
+-- 隐藏跟随图
+if aw.FollowImage and aw.FollowImage.Parent then
+    aw.FollowImage.Visible = false
+end
 
 ap(aw.UIElements.Main,0.9,{
 
