@@ -1,0 +1,422 @@
+-- ==================== 加载 UI ====================
+local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/ggsq1741-debug/cQ/refs/heads/main/main.lua"))()
+local Window = WindUI:CreateWindow({ Title = "通缉伪装：港猫", Author = "Kova", Folder = "ProfileSpoof", Theme = "Dark" })
+local Tab = Window:Tab({ Title = "伪装", Icon = "user" })
+
+local Players = game:GetService("Players")
+local HttpService = game:GetService("HttpService")
+local RunService = game:GetService("RunService")
+local LocalPlayer = Players.LocalPlayer
+
+-- ==================== 全局变量 ====================
+local targetUserId, targetUsername, targetDisplay = "", "", ""
+local victimName = "除我之外全部"
+local nameInput = ""
+local isSpoofing = false
+
+local originals = {}
+local conns = {}
+local queue, head, qlen, queued = {}, 1, 0, {}
+local victimDropdown
+local statusLabel
+local inputComponent
+
+-- ==================== HTTP 工具 ====================
+local function UrlEncode(s)
+    return (s:gsub("([^%w%-_%.~])", function(c) return string.format("%%%02X", string.byte(c)) end))
+end
+
+local function ResolveUser(keyword)
+    keyword = tostring(keyword or ""):gsub("^%s+", ""):gsub("%s+$", "")
+    if keyword == "" then return false, "名字为空" end
+
+    local okHttp, raw = pcall(game.HttpGet, game, "https://users.roblox.com/v1/users/search?keyword=" .. UrlEncode(keyword) .. "&limit=1")
+    if okHttp and raw then
+        local okDecode, d = pcall(function() return HttpService:JSONDecode(raw) end)
+        if okDecode and d and d.data and #d.data > 0 then
+            local u = d.data[1]
+            targetUserId = tostring(u.id)
+            targetUsername = u.name
+            targetDisplay = u.displayName or u.name
+            return true
+        end
+    end
+
+    local okId, id = pcall(function() return Players:GetUserIdFromNameAsync(keyword) end)
+    if okId and id then
+        targetUserId = tostring(id)
+        local ok, raw2 = pcall(game.HttpGet, game, "https://users.roblox.com/v1/users/" .. id)
+        if ok and raw2 then
+            local ok2, d2 = pcall(function() return HttpService:JSONDecode(raw2) end)
+            if ok2 and d2 then
+                targetUsername = d2.name or keyword
+                targetDisplay = d2.displayName or d2.name or keyword
+                return true
+            end
+        end
+        targetUsername = keyword
+        targetDisplay = keyword
+        return true
+    end
+
+    return false, "查不到该玩家(可能拼写错误或执行器拦截了网络)"
+end
+
+-- ==================== 玩家列表 ====================
+local function getVictimList()
+    local list = { "除我之外全部" }
+    for _, p in ipairs(Players:GetPlayers()) do
+        if p ~= LocalPlayer then table.insert(list, p.Name) end
+    end
+    return list
+end
+
+-- ==================== 击杀提示节点识别 ====================
+local function isKillfeedNode(node)
+    local parent = node
+    for i = 1, 6 do
+        if not parent then break end
+        local name = parent.Name:lower()
+        if string.find(name, "kill") or string.find(name, "feed") or 
+           string.find(name, "death") or string.find(name, "log") or 
+           string.find(name, "combat") or string.find(name, "notification") or
+           string.find(name, "elim") or string.find(name, "defeat") then
+            return true
+        end
+        parent = parent.Parent
+    end
+    return false
+end
+
+-- ==================== 替换核心 ====================
+local targetList = {}
+local myName, myDisplay, myId
+local tULow, tDLow, tULen, tDLen = "", "", 0, 0
+
+local function refreshTargets()
+    targetList = {}
+    if victimName == "除我之外全部" then
+        for _, p in ipairs(Players:GetPlayers()) do
+            if p ~= LocalPlayer then
+                local lName = p.Name:lower()
+                table.insert(targetList, {
+                    name = p.Name, display = p.DisplayName,
+                    lName = lName, lDisplay = p.DisplayName:lower(),
+                    atName = "@" .. lName,
+                    dLen = #p.DisplayName, nLen = #p.Name,
+                    id = tostring(p.UserId),
+                })
+            end
+        end
+    else
+        local p = Players:FindFirstChild(victimName)
+        if p then
+            local lName = p.Name:lower()
+            table.insert(targetList, {
+                name = p.Name, display = p.DisplayName,
+                lName = lName, lDisplay = p.DisplayName:lower(),
+                atName = "@" .. lName,
+                dLen = #p.DisplayName, nLen = #p.Name,
+                id = tostring(p.UserId),
+            })
+        end
+    end
+    myName = LocalPlayer.Name:lower()
+    myDisplay = LocalPlayer.DisplayName:lower()
+    myId = tostring(LocalPlayer.UserId)
+    tULow = targetUsername:lower()
+    tDLow = targetDisplay:lower()
+    tULen = #targetUsername
+    tDLen = #targetDisplay
+end
+
+local function spoofText(text, node)
+    if tDLow == "" then return text end
+    if #text < 3 then
+        if victimName == "除我之外全部" and (text == ".." or text == "...") then
+            return targetDisplay
+        end
+        return text
+    end
+
+    local lowerText = text:lower()
+    if lowerText == myName or lowerText == myDisplay or lowerText == ("@" .. myName) then return text end
+    if lowerText == tDLow or lowerText == tULow then return text end
+
+    local out = text
+    local outLower = lowerText
+    local changed = false
+    
+    local isKill = node and isKillfeedNode(node)
+    
+    -- 修复点1：无论是普通文本还是击杀播报，外面的名字都优先替换为伪装目标的“昵称”
+    local replaceTarget = targetDisplay
+
+    for i = 1, #targetList do
+        local p = targetList[i]
+        if p.lName ~= tULow then
+            local pos = string.find(outLower, p.atName, 1, true)
+            local g = 0
+            while pos and g < 8 do
+                g = g + 1
+                -- 处理 @ 后面的名字，强制用 targetUsername
+                out = out:sub(1, pos - 1) .. "@" .. targetUsername .. out:sub(pos + #p.atName)
+                outLower = out:lower()
+                changed = true
+                pos = string.find(outLower, p.atName, pos + tULen + 1, true)
+            end
+        end
+        if p.lDisplay ~= "" and p.lDisplay ~= p.lName and p.lDisplay ~= tDLow and p.lDisplay ~= tULow then
+            local pos = string.find(outLower, p.lDisplay, 1, true)
+            local g = 0
+            while pos and g < 8 do
+                g = g + 1
+                if pos == 1 or out:sub(pos - 1, pos - 1) ~= "@" then
+                    out = out:sub(1, pos - 1) .. replaceTarget .. out:sub(pos + p.dLen)
+                    outLower = out:lower()
+                    changed = true
+                    pos = string.find(outLower, p.lDisplay, pos + #replaceTarget, true)
+                else
+                    pos = string.find(outLower, p.lDisplay, pos + p.dLen, true)
+                end
+            end
+        end
+        if p.lName ~= tDLow and p.lName ~= tULow then
+            local pos = string.find(outLower, p.lName, 1, true)
+            local g = 0
+            while pos and g < 8 do
+                g = g + 1
+                if pos == 1 or out:sub(pos - 1, pos - 1) ~= "@" then
+                    out = out:sub(1, pos - 1) .. replaceTarget .. out:sub(pos + p.nLen)
+                    outLower = out:lower()
+                    changed = true
+                    pos = string.find(outLower, p.lName, pos + #replaceTarget, true)
+                else
+                    pos = string.find(outLower, p.lName, pos + p.nLen, true)
+                end
+            end
+        end
+    end
+
+    -- 修复点2：如果是击杀播报，确保括号里显示真名
+    if isKill and changed then
+        -- 如果原本有 (@xxx)，强制把它内部也替换成目标用户名
+        local hasParen = string.find(out, "%(@[^%)]+%)")
+        if hasParen then
+            out = out:gsub("%(@[^%)]+%)", "(@" .. targetUsername .. ")")
+        else
+            -- 如果原本被游戏省略了括号，且伪装对象的昵称 != 真名，我们就帮它补上
+            -- （如果昵称和真名一样，为了不重复，就不强行补全了）
+            if targetDisplay ~= targetUsername then
+                local pos = string.find(out, targetDisplay, 1, true)
+                if pos then
+                    if pos == 1 or out:sub(pos - 1, pos - 1) ~= "@" then
+                        local endPos = pos + #targetDisplay - 1
+                        local nextFew = out:sub(endPos + 1, endPos + 3)
+                        if nextFew ~= " (@" then
+                            out = out:sub(1, endPos) .. " (@" .. targetUsername .. ")" .. out:sub(endPos + 1)
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    return changed and out or text
+end
+
+local function isTargetImg(img)
+    if img == "" or string.find(img, targetUserId, 1, true) then return false end
+    if string.find(img:lower(), myId, 1, true) then return false end
+    for i = 1, #targetList do
+        if string.find(img, targetList[i].id, 1, true) then return true end
+    end
+    return false
+end
+
+-- ==================== 队列处理 ====================
+local function enqueue(v)
+    if queued[v] then return end
+    if not (v:IsA("TextLabel") or v:IsA("TextButton") or v:IsA("ImageLabel") or v:IsA("ImageButton")) then return end
+    queued[v] = true
+    qlen = qlen + 1
+    queue[qlen] = v
+end
+
+local function processNode(v)
+    if not v.Parent then return end
+    if v:IsA("TextLabel") or v:IsA("TextButton") then
+        local t = v.Text
+        if t and t ~= "" then
+            local nt = spoofText(t, v)
+            if nt ~= t then
+                originals[v] = originals[v] or { Text = t }
+                v.Text = nt
+            end
+        end
+        if not conns[v] then
+            conns[v] = v:GetPropertyChangedSignal("Text"):Connect(function()
+                local cur = v.Text
+                if cur == "" then return end
+                local nn = spoofText(cur, v)
+                if nn ~= cur then v.Text = nn end
+            end)
+        end
+    elseif v:IsA("ImageLabel") or v:IsA("ImageButton") then
+        local img = tostring(v.Image)
+        if isTargetImg(img) then
+            originals[v] = originals[v] or { Image = img, ImageColor3 = v.ImageColor3 }
+            v.Image = "https://www.roblox.com/avatar-thumbnail/image?userId=" .. targetUserId .. "&width=420&height=420&format=png"
+            v.ImageColor3 = Color3.new(1, 1, 1)
+        end
+        if not conns[v] then
+            conns[v] = v:GetPropertyChangedSignal("Image"):Connect(function()
+                local cur = tostring(v.Image)
+                if isTargetImg(cur) then
+                    v.Image = "https://www.roblox.com/avatar-thumbnail/image?userId=" .. targetUserId .. "&width=420&height=420&format=png"
+                    v.ImageColor3 = Color3.new(1, 1, 1)
+                end
+            end)
+        end
+    end
+end
+
+-- ==================== 启停控制 ====================
+local stopSpoof
+
+local function startSpoof()
+    refreshTargets()
+    
+    if tDLow == "" then
+        if statusLabel then statusLabel:Set("未选目标，请先输入名字并解析") end
+        return
+    end
+    
+    stopSpoof()
+    isSpoofing = true
+    queue, head, qlen, queued = {}, 1, 0, {}
+
+    local containers = { game:GetService("CoreGui"), LocalPlayer:FindFirstChild("PlayerGui") }
+    if gethui then
+        local ok, h = pcall(gethui)
+        if ok and h then table.insert(containers, h) end
+    end
+    for _, c in ipairs(containers) do
+        if c then
+            for _, d in ipairs(c:GetDescendants()) do enqueue(d) end
+            c.DescendantAdded:Connect(function(d) if isSpoofing then enqueue(d) end end)
+        end
+    end
+
+    RunService:BindToRenderStep("SpoofTick", Enum.RenderPriority.Last.Value, function()
+        if not isSpoofing then return end
+        local remain = qlen - head + 1
+        local budget = remain > 1000 and 150 or (remain > 300 and 300 or 500)
+        while head <= qlen and budget > 0 do
+            local v = queue[head]; queue[head] = nil; head = head + 1
+            queued[v] = nil; budget = budget - 1
+            pcall(processNode, v)
+        end
+        if head > 5000 then
+            local nq, ni = {}, 0
+            for i = head, qlen do ni = ni + 1; nq[ni] = queue[i] end
+            queue, head, qlen = nq, 1, ni
+        end
+    end)
+
+    if statusLabel then statusLabel:Set(targetDisplay .. " (@" .. targetUsername .. ") 运行中") end
+end
+
+stopSpoof = function()
+    isSpoofing = false
+    pcall(function() RunService:UnbindFromRenderStep("SpoofTick") end)
+    for _, c in pairs(conns) do pcall(function() c:Disconnect() end) end
+    table.clear(conns)
+    for inst, d in pairs(originals) do
+        pcall(function()
+            if d.Text ~= nil then inst.Text = d.Text end
+            if d.Image ~= nil then inst.Image = d.Image end
+            if d.ImageColor3 ~= nil then inst.ImageColor3 = d.ImageColor3 end
+        end)
+    end
+    table.clear(originals)
+    queue, head, qlen, queued = {}, 1, 0, {}
+    if statusLabel then statusLabel:Set("已关闭") end
+end
+
+-- ==================== 玩家变动监听 ====================
+local function onPlayersChanged()
+    if victimDropdown and victimDropdown.Refresh then
+        pcall(function() victimDropdown:Refresh(getVictimList()) end)
+    end
+    if isSpoofing then
+        refreshTargets()
+        for v in pairs(originals) do enqueue(v) end
+    end
+end
+Players.PlayerAdded:Connect(function() task.defer(onPlayersChanged) end)
+Players.PlayerRemoving:Connect(function() task.defer(onPlayersChanged) end)
+
+-- ==================== UI 搭建 ====================
+Tab:Section({ Title = "1. 要伪装谁的卡片" })
+
+victimDropdown = Tab:Dropdown({
+    Title = "选择被伪装对象",
+    Values = getVictimList(),
+    Default = "除我之外全部",
+    Callback = function(v)
+        victimName = v
+        if isSpoofing then
+            refreshTargets()
+            stopSpoof(); startSpoof()
+        end
+    end,
+})
+
+Tab:Section({ Title = "2. 伪装成谁" })
+
+inputComponent = Tab:Input({
+    Title = "输入名字（打完按回车键！）",
+    Default = "",
+    Callback = function(t) 
+        nameInput = t 
+    end,
+})
+
+Tab:Button({
+    Title = "开始伪装",
+    Callback = function()
+        local ok, val = pcall(function()
+            if type(inputComponent) == "table" or type(inputComponent) == "userdata" then
+                if inputComponent.Value then return inputComponent.Value end
+                if inputComponent.Text then return inputComponent.Text end
+                if inputComponent.GetText then return inputComponent:GetText() end
+                if inputComponent.Instance and inputComponent.Instance.Text then return inputComponent.Instance.Text end
+            end
+            return nil
+        end)
+        
+        if ok and val and type(val) == "string" and val ~= "" then
+            nameInput = val
+        end
+
+        if not nameInput or nameInput == "" then
+            if statusLabel then statusLabel:Set("读取不到名字，请按回车确认") end
+            return
+        end
+        
+        local success, errMsg = ResolveUser(nameInput)
+        if not success then
+            if statusLabel then statusLabel:Set("解析失败: " .. tostring(errMsg)) end
+            return
+        end
+        
+        startSpoof()
+    end,
+})
+
+Tab:Button({ Title = "关闭伪装", Callback = stopSpoof })
+
+pcall(function()
+    statusLabel = Tab:Label({ Title = "状态：已关闭" })
+end)
